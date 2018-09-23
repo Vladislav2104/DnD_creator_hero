@@ -11,6 +11,7 @@
 #include<QTextEdit>
 #include<QSpinBox>
 #include<QDebug>
+#include<QVector>
 
 namespace Ui {
 class MainWindow;
@@ -33,8 +34,14 @@ public:
     int int_out_stats;
     int wis_out_stats;
     int cha_out_stats;
-    int race_buff;
+    int race_buff_str;
+    int race_buff_dex;
+    int race_buff_con;
+    int race_buff_int;
+    int race_buff_wis;
+    int race_buff_cha;
     int result_stats;
+    QVector <int> integerVector;
 
     ~MainWindow();
 

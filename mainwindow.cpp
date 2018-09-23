@@ -8,6 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     loadDB();
+    integerVector.resize(4);
 }
 
 
@@ -33,49 +34,38 @@ void MainWindow::loadDB()
 
 void MainWindow::CreateStartStats()
 {
-    ui->Str_spinBox->setValue(rand()%18);
-        str_out_stats=ui->Str_spinBox->value();
+    ui->Str_spinBox->setValue(rand()%17+1);
+    str_out_stats=ui->Str_spinBox->value();
 
-    ui->Dex_spinBox->setValue(rand()%18);
-        dex_out_stats=ui->Dex_spinBox->value();
+    ui->Dex_spinBox->setValue(rand()%17+1);
+    dex_out_stats=ui->Dex_spinBox->value();
 
-    ui->Con_spinBox->setValue(rand()%18);
-        con_out_stats=ui->Con_spinBox->value();
+    ui->Con_spinBox->setValue(rand()%17+1);
+    con_out_stats=ui->Con_spinBox->value();
 
-    ui->Int_spinBox->setValue(rand()%18);
-        int_out_stats=ui->Int_spinBox->value();
+    ui->Int_spinBox->setValue(rand()%17+1);
+    int_out_stats=ui->Int_spinBox->value();
 
-    ui->Wis_spinBox->setValue(rand()%18);
-        wis_out_stats=ui->Wis_spinBox->value();
+    ui->Wis_spinBox->setValue(rand()%17+1);
+    wis_out_stats=ui->Wis_spinBox->value();
 
-    ui->Cha_spinBox->setValue(rand()%18);
+    ui->Cha_spinBox->setValue(rand()%17+1);
     cha_out_stats=ui->Cha_spinBox->value();
 }
 
 void MainWindow::ResultStatsView()
 {
-//    login = ui->lineEdit_login->text();
-//    pass = ui->lineEdit_pass->text();
-
-//    if (login == "admin" && pass == "qwerty")
-
-
-    result_stats = race_buff + str_out_stats;
+    result_stats = race_buff_str + str_out_stats;
     ui->str_stats_label->setText(QString::number(result_stats));
-
-    result_stats = race_buff + dex_out_stats;
+    result_stats = race_buff_dex + dex_out_stats;
     ui->dex_stats_label->setText(QString::number(result_stats));
-
-    result_stats = race_buff + con_out_stats;
+    result_stats = race_buff_con + con_out_stats;
     ui->con_stats_label->setText(QString::number(result_stats));
-
-    result_stats = race_buff + int_out_stats;
+    result_stats = race_buff_int + int_out_stats;
     ui->int_stats_label->setText(QString::number(result_stats));
-
-    result_stats = race_buff + wis_out_stats;
+    result_stats = race_buff_wis + wis_out_stats;
     ui->wis_stats_label->setText(QString::number(result_stats));
-
-    result_stats = race_buff + cha_out_stats;
+    result_stats = race_buff_cha + cha_out_stats;
     ui->cha_stats_label->setText(QString::number(result_stats));
 
 }
@@ -87,56 +77,80 @@ void MainWindow::on_ExitPushButton_clicked()
 
 void MainWindow::on_RaceComboBox_currentIndexChanged(int index)
 {
-    race_buff=0;
+    race_buff_str=0;
+    race_buff_dex=0;
+    race_buff_con=0;
+    race_buff_int=0;
+    race_buff_wis=0;
+    race_buff_cha=0;
 
     switch(index)
     {
     case 0:
-        race_buff=3;
+        race_buff_str=3;
+        race_buff_dex=3;
+        race_buff_con=0;
+        race_buff_int=0;
+        race_buff_wis=0;
+        race_buff_cha=3;
 
-        ui->race_mod_str_label->setText(QString::number(race_buff));
-        ui->race_mod_dex_label->setText(QString::number(race_buff));
-        ui->race_mod_cha_label->setText(QString::number(race_buff));
-        ui->race_mod_con_label->setText(QString::number(0));
-        ui->race_mod_int_label->setText(QString::number(0));
-        ui->race_mod_wis_label->setText(QString::number(0));
+        ui->race_mod_str_label->setText(QString::number(race_buff_str));
+        ui->race_mod_dex_label->setText(QString::number(race_buff_dex));
+        ui->race_mod_con_label->setText(QString::number(race_buff_con));
+        ui->race_mod_int_label->setText(QString::number(race_buff_int));
+        ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
+        ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
         ResultStatsView();
-
 
         break;
     case 1:
-        race_buff=5;
+        race_buff_str=5;
+        race_buff_dex=0;
+        race_buff_con=5;
+        race_buff_int=0;
+        race_buff_wis=0;
+        race_buff_cha=3;
 
-        ui->race_mod_str_label->setText(QString::number(race_buff));
-        ui->race_mod_con_label->setText(QString::number(race_buff));
-        ui->race_mod_dex_label->setText(QString::number(0));
-        ui->race_mod_int_label->setText(QString::number(0));
-        ui->race_mod_wis_label->setText(QString::number(0));
-        ui->race_mod_cha_label->setText(QString::number(0));
+        ui->race_mod_str_label->setText(QString::number(race_buff_str));
+        ui->race_mod_dex_label->setText(QString::number(race_buff_dex));
+        ui->race_mod_con_label->setText(QString::number(race_buff_con));
+        ui->race_mod_int_label->setText(QString::number(race_buff_int));
+        ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
+        ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
         ResultStatsView();
 
         break;
     case 2:
-        race_buff=3;
+        race_buff_str=0;
+        race_buff_dex=3;
+        race_buff_con=0;
+        race_buff_int=3;
+        race_buff_wis=3;
+        race_buff_cha=0;
 
-        ui->race_mod_int_label->setText(QString::number(race_buff));
-        ui->race_mod_dex_label->setText(QString::number(race_buff));
-        ui->race_mod_cha_label->setText(QString::number(race_buff));
-        ui->race_mod_wis_label->setText(QString::number(0));
-        ui->race_mod_con_label->setText(QString::number(0));
-        ui->race_mod_str_label->setText(QString::number(0));
+        ui->race_mod_str_label->setText(QString::number(race_buff_str));
+        ui->race_mod_dex_label->setText(QString::number(race_buff_dex));
+        ui->race_mod_con_label->setText(QString::number(race_buff_con));
+        ui->race_mod_int_label->setText(QString::number(race_buff_int));
+        ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
+        ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
         ResultStatsView();
 
         break;
     case 3:
-        race_buff=4;
+        race_buff_str=4;
+        race_buff_dex=0;
+        race_buff_con=4;
+        race_buff_int=0;
+        race_buff_wis=4;
+        race_buff_cha=4;
 
-        ui->race_mod_str_label->setText(QString::number(race_buff));
-        ui->race_mod_con_label->setText(QString::number(race_buff));
-        ui->race_mod_cha_label->setText(QString::number(race_buff));
-        ui->race_mod_int_label->setText(QString::number(0));
-        ui->race_mod_wis_label->setText(QString::number(0));
-        ui->race_mod_dex_label->setText(QString::number(0));
+        ui->race_mod_str_label->setText(QString::number(race_buff_str));
+        ui->race_mod_dex_label->setText(QString::number(race_buff_dex));
+        ui->race_mod_con_label->setText(QString::number(race_buff_con));
+        ui->race_mod_int_label->setText(QString::number(race_buff_int));
+        ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
+        ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
         ResultStatsView();
 
         break;
