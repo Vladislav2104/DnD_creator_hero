@@ -11,7 +11,6 @@
 #include<QTextEdit>
 #include<QSpinBox>
 #include<QDebug>
-#include<QVector>
 
 namespace Ui {
 class MainWindow;
@@ -22,12 +21,12 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    const QString dbFilename = "DnD_db.db";
     QSqlDatabase db;
     QSqlTableModel *model;
     explicit MainWindow(QWidget *parent = 0);
 
-//    QString login;
-//    QString pass;
+
     int str_out_stats;
     int dex_out_stats;
     int con_out_stats;
@@ -41,7 +40,6 @@ public:
     int race_buff_wis;
     int race_buff_cha;
     int result_stats;
-    QVector <int> integerVector;
 
     ~MainWindow();
 
