@@ -18,7 +18,6 @@ void MainWindow::loadDB()
 
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(dbFilename);
-    //db.setDatabaseName("E:/Univer/CMVP/labs/DnD_Curse_work_anketa/DnD_db.db");
     db.open();
 
     model = new QSqlTableModel(this,db);
@@ -32,42 +31,40 @@ void MainWindow::loadDB()
     ui->AlignmentComboBox->setModelColumn(2);
 }
 
-void MainWindow::CreateStartStats()
+void MainWindow::on_Str_spinBox_valueChanged(int)
 {
-    ui->Str_spinBox->setValue(rand()%17+1);
-    str_out_stats=ui->Str_spinBox->value();
-
-    ui->Dex_spinBox->setValue(rand()%17+1);
-    dex_out_stats=ui->Dex_spinBox->value();
-
-    ui->Con_spinBox->setValue(rand()%17+1);
-    con_out_stats=ui->Con_spinBox->value();
-
-    ui->Int_spinBox->setValue(rand()%17+1);
-    int_out_stats=ui->Int_spinBox->value();
-
-    ui->Wis_spinBox->setValue(rand()%17+1);
-    wis_out_stats=ui->Wis_spinBox->value();
-
-    ui->Cha_spinBox->setValue(rand()%17+1);
-    cha_out_stats=ui->Cha_spinBox->value();
+    result_stats = race_buff_str + ui->Str_spinBox->value();
+    ui->str_stats_label->setText(QString::number(result_stats));
 }
 
-void MainWindow::ResultStatsView()
+void MainWindow::on_Dex_spinBox_valueChanged(int)
 {
-    result_stats = race_buff_str + str_out_stats;
-    ui->str_stats_label->setText(QString::number(result_stats));
-    result_stats = race_buff_dex + dex_out_stats;
+    result_stats = race_buff_dex + ui->Dex_spinBox->value();
     ui->dex_stats_label->setText(QString::number(result_stats));
-    result_stats = race_buff_con + con_out_stats;
-    ui->con_stats_label->setText(QString::number(result_stats));
-    result_stats = race_buff_int + int_out_stats;
-    ui->int_stats_label->setText(QString::number(result_stats));
-    result_stats = race_buff_wis + wis_out_stats;
-    ui->wis_stats_label->setText(QString::number(result_stats));
-    result_stats = race_buff_cha + cha_out_stats;
-    ui->cha_stats_label->setText(QString::number(result_stats));
+}
 
+void MainWindow::on_Con_spinBox_valueChanged(int)
+{
+    result_stats = race_buff_con + ui->Con_spinBox->value();
+    ui->con_stats_label->setText(QString::number(result_stats));
+}
+
+void MainWindow::on_Int_spinBox_valueChanged(int)
+{
+    result_stats = race_buff_int + ui->Int_spinBox->value();
+    ui->int_stats_label->setText(QString::number(result_stats));
+}
+
+void MainWindow::on_Wis_spinBox_valueChanged(int)
+{
+    result_stats = race_buff_wis + ui->Wis_spinBox->value();
+    ui->wis_stats_label->setText(QString::number(result_stats));
+}
+
+void MainWindow::on_Cha_spinBox_valueChanged(int)
+{
+    result_stats = race_buff_cha + ui->Cha_spinBox->value();
+    ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
 void MainWindow::on_ExitPushButton_clicked()
@@ -100,7 +97,6 @@ void MainWindow::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_int_label->setText(QString::number(race_buff_int));
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
-        ResultStatsView();
 
         break;
     case 1:
@@ -117,7 +113,7 @@ void MainWindow::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_int_label->setText(QString::number(race_buff_int));
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
-        ResultStatsView();
+
 
         break;
     case 2:
@@ -134,7 +130,6 @@ void MainWindow::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_int_label->setText(QString::number(race_buff_int));
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
-        ResultStatsView();
 
         break;
     case 3:
@@ -151,59 +146,46 @@ void MainWindow::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_int_label->setText(QString::number(race_buff_int));
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
-        ResultStatsView();
-
         break;
     }
+    Result_label_update();
 }
 
-void MainWindow::on_ClassesComboBox_currentIndexChanged(int index)
+void MainWindow::on_ClassesComboBox_currentIndexChanged(int)
+{
+    ui->Str_spinBox->setValue(rand()%17+1);
+
+    ui->Dex_spinBox->setValue(rand()%17+1);
+
+    ui->Con_spinBox->setValue(rand()%17+1);
+
+    ui->Int_spinBox->setValue(rand()%17+1);
+
+    ui->Wis_spinBox->setValue(rand()%17+1);
+
+    ui->Cha_spinBox->setValue(rand()%17+1);
+}
+
+void MainWindow::Result_label_update()
 {
 
-    switch(index)
-    {
-    case 0:
+ result_stats = race_buff_str + ui->Str_spinBox->value();
+ ui->str_stats_label->setText(QString::number(result_stats));
 
-        CreateStartStats();
-        ResultStatsView();
-        break;
+ result_stats = race_buff_dex + ui->Dex_spinBox->value();
+ ui->dex_stats_label->setText(QString::number(result_stats));
 
-    case 1:
-        CreateStartStats();
-        ResultStatsView();
-        break;
+ result_stats = race_buff_con + ui->Con_spinBox->value();
+ ui->con_stats_label->setText(QString::number(result_stats));
 
-    case 2:
-        CreateStartStats();
-        ResultStatsView();
-        break;
+ result_stats = race_buff_int + ui->Int_spinBox->value();
+ ui->int_stats_label->setText(QString::number(result_stats));
 
-    case 3:
-        CreateStartStats();
-        ResultStatsView();
-        break;
-    case 4:
+ result_stats = race_buff_wis + ui->Wis_spinBox->value();
+ ui->wis_stats_label->setText(QString::number(result_stats));
 
-        CreateStartStats();
-        ResultStatsView();
-        break;
-
-    case 5:
-        CreateStartStats();
-        ResultStatsView();
-        break;
-
-    case 6:
-        CreateStartStats();
-        ResultStatsView();
-        break;
-
-    case 7:
-        CreateStartStats();
-        ResultStatsView();
-        break;
-    }
-
+ result_stats = race_buff_cha + ui->Cha_spinBox->value();
+ ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
 MainWindow::~MainWindow()

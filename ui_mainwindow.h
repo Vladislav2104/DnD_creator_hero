@@ -21,7 +21,7 @@
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
-#include <QtWidgets/QStatusBar>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -97,15 +97,23 @@ public:
     QLabel *wis_stats_label;
     QLabel *dex_stats_label;
     QLineEdit *NameTextEdit;
+    QTextEdit *bio_textEdit;
+    QLabel *biograf_label;
+    QGraphicsView *graphicsView_background;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
-    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(692, 676);
+        MainWindow->resize(672, 654);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setStyleSheet(QStringLiteral(""));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         BodyDategroupBox = new QGroupBox(centralWidget);
@@ -169,10 +177,10 @@ public:
 
         ExitPushButton = new QPushButton(centralWidget);
         ExitPushButton->setObjectName(QStringLiteral("ExitPushButton"));
-        ExitPushButton->setGeometry(QRect(590, 590, 80, 21));
+        ExitPushButton->setGeometry(QRect(580, 590, 80, 21));
         graphicsView = new QGraphicsView(centralWidget);
         graphicsView->setObjectName(QStringLiteral("graphicsView"));
-        graphicsView->setGeometry(QRect(490, 0, 170, 260));
+        graphicsView->setGeometry(QRect(490, 10, 170, 260));
         RaceClassAliggroupBox = new QGroupBox(centralWidget);
         RaceClassAliggroupBox->setObjectName(QStringLiteral("RaceClassAliggroupBox"));
         RaceClassAliggroupBox->setGeometry(QRect(30, 60, 231, 151));
@@ -362,17 +370,36 @@ public:
         NameTextEdit = new QLineEdit(centralWidget);
         NameTextEdit->setObjectName(QStringLiteral("NameTextEdit"));
         NameTextEdit->setGeometry(QRect(30, 40, 431, 21));
+        bio_textEdit = new QTextEdit(centralWidget);
+        bio_textEdit->setObjectName(QStringLiteral("bio_textEdit"));
+        bio_textEdit->setGeometry(QRect(390, 350, 271, 231));
+        biograf_label = new QLabel(centralWidget);
+        biograf_label->setObjectName(QStringLiteral("biograf_label"));
+        biograf_label->setGeometry(QRect(390, 330, 47, 13));
+        biograf_label->setFont(font);
+        graphicsView_background = new QGraphicsView(centralWidget);
+        graphicsView_background->setObjectName(QStringLiteral("graphicsView_background"));
+        graphicsView_background->setGeometry(QRect(0, 0, 671, 621));
+        graphicsView_background->setStyleSheet(QStringLiteral("background-image: url(:/res/resources/ramka2.2.png);"));
         MainWindow->setCentralWidget(centralWidget);
+        graphicsView_background->raise();
+        BodyDategroupBox->raise();
+        NameLabel->raise();
+        layoutWidget_4->raise();
+        ExitPushButton->raise();
+        graphicsView->raise();
+        RaceClassAliggroupBox->raise();
+        StatsgroupBox->raise();
+        NameTextEdit->raise();
+        bio_textEdit->raise();
+        biograf_label->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 692, 20));
+        menuBar->setGeometry(QRect(0, 0, 672, 20));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QStringLiteral("statusBar"));
-        MainWindow->setStatusBar(statusBar);
 
         retranslateUi(MainWindow);
 
@@ -430,6 +457,7 @@ public:
         int_stats_label->setText(QApplication::translate("MainWindow", "int_stats", nullptr));
         wis_stats_label->setText(QApplication::translate("MainWindow", "wis_stats", nullptr));
         dex_stats_label->setText(QApplication::translate("MainWindow", "dex_stats", nullptr));
+        biograf_label->setText(QApplication::translate("MainWindow", "Bio:", nullptr));
     } // retranslateUi
 
 };

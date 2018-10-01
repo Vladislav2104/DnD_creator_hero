@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[9];
-    char stringdata0[159];
+    QByteArrayData data[15];
+    char stringdata0[319];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,17 +35,28 @@ QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
 QT_MOC_LITERAL(1, 11, 25), // "on_ExitPushButton_clicked"
 QT_MOC_LITERAL(2, 37, 0), // ""
 QT_MOC_LITERAL(3, 38, 6), // "loadDB"
-QT_MOC_LITERAL(4, 45, 16), // "CreateStartStats"
-QT_MOC_LITERAL(5, 62, 15), // "ResultStatsView"
-QT_MOC_LITERAL(6, 78, 35), // "on_RaceComboBox_currentIndexC..."
-QT_MOC_LITERAL(7, 114, 5), // "index"
-QT_MOC_LITERAL(8, 120, 38) // "on_ClassesComboBox_currentInd..."
+QT_MOC_LITERAL(4, 45, 35), // "on_RaceComboBox_currentIndexC..."
+QT_MOC_LITERAL(5, 81, 5), // "index"
+QT_MOC_LITERAL(6, 87, 38), // "on_ClassesComboBox_currentInd..."
+QT_MOC_LITERAL(7, 126, 19), // "Result_label_update"
+QT_MOC_LITERAL(8, 146, 27), // "on_Str_spinBox_valueChanged"
+QT_MOC_LITERAL(9, 174, 4), // "arg1"
+QT_MOC_LITERAL(10, 179, 27), // "on_Cha_spinBox_valueChanged"
+QT_MOC_LITERAL(11, 207, 27), // "on_Dex_spinBox_valueChanged"
+QT_MOC_LITERAL(12, 235, 27), // "on_Con_spinBox_valueChanged"
+QT_MOC_LITERAL(13, 263, 27), // "on_Int_spinBox_valueChanged"
+QT_MOC_LITERAL(14, 291, 27) // "on_Wis_spinBox_valueChanged"
 
     },
     "MainWindow\0on_ExitPushButton_clicked\0"
-    "\0loadDB\0CreateStartStats\0ResultStatsView\0"
-    "on_RaceComboBox_currentIndexChanged\0"
-    "index\0on_ClassesComboBox_currentIndexChanged"
+    "\0loadDB\0on_RaceComboBox_currentIndexChanged\0"
+    "index\0on_ClassesComboBox_currentIndexChanged\0"
+    "Result_label_update\0on_Str_spinBox_valueChanged\0"
+    "arg1\0on_Cha_spinBox_valueChanged\0"
+    "on_Dex_spinBox_valueChanged\0"
+    "on_Con_spinBox_valueChanged\0"
+    "on_Int_spinBox_valueChanged\0"
+    "on_Wis_spinBox_valueChanged"
 };
 #undef QT_MOC_LITERAL
 
@@ -55,7 +66,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+      11,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,20 +74,30 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   44,    2, 0x08 /* Private */,
-       3,    0,   45,    2, 0x08 /* Private */,
-       4,    0,   46,    2, 0x08 /* Private */,
-       5,    0,   47,    2, 0x08 /* Private */,
-       6,    1,   48,    2, 0x08 /* Private */,
-       8,    1,   51,    2, 0x08 /* Private */,
+       1,    0,   69,    2, 0x08 /* Private */,
+       3,    0,   70,    2, 0x08 /* Private */,
+       4,    1,   71,    2, 0x08 /* Private */,
+       6,    1,   74,    2, 0x08 /* Private */,
+       7,    0,   77,    2, 0x08 /* Private */,
+       8,    1,   78,    2, 0x08 /* Private */,
+      10,    1,   81,    2, 0x08 /* Private */,
+      11,    1,   84,    2, 0x08 /* Private */,
+      12,    1,   87,    2, 0x08 /* Private */,
+      13,    1,   90,    2, 0x08 /* Private */,
+      14,    1,   93,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, QMetaType::Int,    5,
+    QMetaType::Void, QMetaType::Int,    5,
     QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    7,
-    QMetaType::Void, QMetaType::Int,    7,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    9,
 
        0        // eod
 };
@@ -89,10 +110,15 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         switch (_id) {
         case 0: _t->on_ExitPushButton_clicked(); break;
         case 1: _t->loadDB(); break;
-        case 2: _t->CreateStartStats(); break;
-        case 3: _t->ResultStatsView(); break;
-        case 4: _t->on_RaceComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 5: _t->on_ClassesComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->on_RaceComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 3: _t->on_ClassesComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 4: _t->Result_label_update(); break;
+        case 5: _t->on_Str_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->on_Cha_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->on_Dex_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->on_Con_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 9: _t->on_Int_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 10: _t->on_Wis_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         default: ;
         }
     }
@@ -123,13 +149,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 11)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 11;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 11)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 6;
+        _id -= 11;
     }
     return _id;
 }

@@ -6,12 +6,21 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>692</width>
-    <height>676</height>
+    <width>672</width>
+    <height>654</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="BodyDategroupBox">
@@ -196,7 +205,7 @@
    <widget class="QPushButton" name="ExitPushButton">
     <property name="geometry">
      <rect>
-      <x>590</x>
+      <x>580</x>
       <y>590</y>
       <width>80</width>
       <height>21</height>
@@ -210,7 +219,7 @@
     <property name="geometry">
      <rect>
       <x>490</x>
-      <y>0</y>
+      <y>10</y>
       <width>170</width>
       <height>260</height>
      </rect>
@@ -1018,13 +1027,65 @@
      </rect>
     </property>
    </widget>
+   <widget class="QTextEdit" name="bio_textEdit">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>350</y>
+      <width>271</width>
+      <height>231</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="biograf_label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>330</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Bio:</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView_background">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>671</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/res/resources/ramka2.2.png);</string>
+    </property>
+   </widget>
+   <zorder>graphicsView_background</zorder>
+   <zorder>BodyDategroupBox</zorder>
+   <zorder>NameLabel</zorder>
+   <zorder>layoutWidget_4</zorder>
+   <zorder>ExitPushButton</zorder>
+   <zorder>graphicsView</zorder>
+   <zorder>RaceClassAliggroupBox</zorder>
+   <zorder>StatsgroupBox</zorder>
+   <zorder>NameTextEdit</zorder>
+   <zorder>bio_textEdit</zorder>
+   <zorder>biograf_label</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>692</width>
+     <width>672</width>
      <height>20</height>
     </rect>
    </property>
@@ -1037,7 +1098,6 @@
     <bool>false</bool>
    </attribute>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
