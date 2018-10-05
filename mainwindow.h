@@ -12,6 +12,11 @@
 #include<QSpinBox>
 #include<QDebug>
 #include<QFile>
+#include<QPixmap>
+#include<QDesktopWidget>
+#include<QWidget>
+#include<QImage>
+#include<QPainter>
 
 namespace Ui {
 class MainWindow;
@@ -59,6 +64,8 @@ private slots:
     void on_Int_spinBox_valueChanged(int arg1);
 
     void on_Wis_spinBox_valueChanged(int arg1);
+
+    void on_pushButton_saveAnket_clicked();
 
 private:
     Ui::MainWindow *ui;

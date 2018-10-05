@@ -22,7 +22,6 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QTextEdit>
-#include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -100,15 +99,15 @@ public:
     QTextEdit *bio_textEdit;
     QLabel *biograf_label;
     QGraphicsView *graphicsView_background;
+    QPushButton *pushButton_saveAnket;
     QMenuBar *menuBar;
-    QToolBar *mainToolBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(672, 654);
-        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        MainWindow->resize(670, 640);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
@@ -151,7 +150,7 @@ public:
         HeightTextEdit->setGeometry(QRect(100, 40, 80, 22));
         NameLabel = new QLabel(centralWidget);
         NameLabel->setObjectName(QStringLiteral("NameLabel"));
-        NameLabel->setGeometry(QRect(30, 10, 46, 13));
+        NameLabel->setGeometry(QRect(30, 20, 46, 13));
         NameLabel->setFont(font);
         layoutWidget_4 = new QWidget(centralWidget);
         layoutWidget_4->setObjectName(QStringLiteral("layoutWidget_4"));
@@ -215,6 +214,8 @@ public:
         StatsgroupBox = new QGroupBox(centralWidget);
         StatsgroupBox->setObjectName(QStringLiteral("StatsgroupBox"));
         StatsgroupBox->setGeometry(QRect(30, 220, 341, 391));
+        StatsgroupBox->setStyleSheet(QLatin1String("border-color: rgb(0, 0, 0);\n"
+"selection-background-color: rgb(255, 6, 176);"));
         Stats_res_label = new QLabel(StatsgroupBox);
         Stats_res_label->setObjectName(QStringLiteral("Stats_res_label"));
         Stats_res_label->setGeometry(QRect(240, 30, 80, 20));
@@ -379,8 +380,11 @@ public:
         biograf_label->setFont(font);
         graphicsView_background = new QGraphicsView(centralWidget);
         graphicsView_background->setObjectName(QStringLiteral("graphicsView_background"));
-        graphicsView_background->setGeometry(QRect(0, 0, 671, 621));
+        graphicsView_background->setGeometry(QRect(-10, -10, 690, 651));
         graphicsView_background->setStyleSheet(QStringLiteral("background-image: url(:/res/resources/ramka2.2.png);"));
+        pushButton_saveAnket = new QPushButton(centralWidget);
+        pushButton_saveAnket->setObjectName(QStringLiteral("pushButton_saveAnket"));
+        pushButton_saveAnket->setGeometry(QRect(490, 590, 80, 21));
         MainWindow->setCentralWidget(centralWidget);
         graphicsView_background->raise();
         BodyDategroupBox->raise();
@@ -389,17 +393,15 @@ public:
         ExitPushButton->raise();
         graphicsView->raise();
         RaceClassAliggroupBox->raise();
-        StatsgroupBox->raise();
         NameTextEdit->raise();
         bio_textEdit->raise();
         biograf_label->raise();
+        pushButton_saveAnket->raise();
+        StatsgroupBox->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 672, 20));
+        menuBar->setGeometry(QRect(0, 0, 670, 20));
         MainWindow->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
-        MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
 
         retranslateUi(MainWindow);
 
@@ -458,6 +460,7 @@ public:
         wis_stats_label->setText(QApplication::translate("MainWindow", "wis_stats", nullptr));
         dex_stats_label->setText(QApplication::translate("MainWindow", "dex_stats", nullptr));
         biograf_label->setText(QApplication::translate("MainWindow", "Bio:", nullptr));
+        pushButton_saveAnket->setText(QApplication::translate("MainWindow", "SaveAnket", nullptr));
     } // retranslateUi
 
 };

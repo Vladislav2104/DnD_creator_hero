@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    setFixedSize(670,640);
     loadDB();
 }
 
@@ -194,4 +195,13 @@ MainWindow::~MainWindow()
     delete model;
     db.close();
     delete ui;
+}
+
+void MainWindow::on_pushButton_saveAnket_clicked()
+{
+     //QPixmap window = QPixmap::grabWindow(QApplication::desktop()->winId());
+     QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
+     QPainter painter(&image);
+     ui->centralWidget->render(&painter);
+     image.save(QString(QApplication::applicationDirPath()+"/res/anketa1.png"));
 }
