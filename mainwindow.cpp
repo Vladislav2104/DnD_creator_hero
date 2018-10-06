@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     setFixedSize(670,640);
     loadDB();
+    pop_upChar_cs();
 }
 
 
@@ -30,6 +31,17 @@ void MainWindow::loadDB()
     ui->ClassesComboBox->setModelColumn(1);
     ui->AlignmentComboBox->setModel(model);
     ui->AlignmentComboBox->setModelColumn(2);
+}
+
+void MainWindow::pop_upChar_cs()
+{
+    ui->Str_label->setToolTip ("Strength - measures character's physical strength and endurance.");
+    ui->Dex_label->setToolTip ("Dexterity - contains coordination, agility, reaction speed, reflexes and a sense of balance.");
+    ui->Con_label->setToolTip ("Constitution - includes stamina, training, health and physical resistance to damage.");
+    ui->Int_label->setToolTip ("Intelligence - represents the character's memory, prudence, and ability to learn.");
+    ui->Wis_label->setToolTip ("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
+    ui->Cha_label->setToolTip ("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
+
 }
 
 void MainWindow::on_Str_spinBox_valueChanged(int)

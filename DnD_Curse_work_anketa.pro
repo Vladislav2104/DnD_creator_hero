@@ -35,3 +35,5 @@ FORMS += \
 
 RESOURCES += \
     resources.qrc
+
+RC_ICONS = DnD_cr.ico

@@ -43,9 +43,10 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_ExitPushButton_clicked();
 
     void loadDB();
+
+    void pop_upChar_cs();
 
     void on_RaceComboBox_currentIndexChanged(int index);
 
@@ -66,6 +67,8 @@ private slots:
     void on_Wis_spinBox_valueChanged(int arg1);
 
     void on_pushButton_saveAnket_clicked();
+
+    void on_ExitPushButton_clicked();
 
 private:
     Ui::MainWindow *ui;

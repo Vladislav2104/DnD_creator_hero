@@ -26,7 +26,7 @@
    <widget class="QGroupBox" name="BodyDategroupBox">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>280</x>
       <y>80</y>
       <width>191</width>
       <height>131</height>
@@ -230,7 +230,7 @@
      <rect>
       <x>30</x>
       <y>60</y>
-      <width>231</width>
+      <width>241</width>
       <height>151</height>
      </rect>
     </property>
@@ -240,7 +240,7 @@
     <widget class="QLabel" name="RaceLabel">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>30</y>
        <width>80</width>
        <height>20</height>
@@ -258,7 +258,7 @@
     <widget class="QLabel" name="SubRaceLabel">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>30</y>
        <width>80</width>
        <height>20</height>
@@ -276,7 +276,7 @@
     <widget class="QComboBox" name="RaceComboBox">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>50</y>
        <width>100</width>
        <height>20</height>
@@ -286,7 +286,7 @@
     <widget class="QLineEdit" name="SubRaceTextEdit">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>120</x>
        <y>50</y>
        <width>100</width>
        <height>20</height>
@@ -296,7 +296,7 @@
     <widget class="QLabel" name="ClassesLabel">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>20</x>
        <y>90</y>
        <width>80</width>
        <height>20</height>
@@ -314,7 +314,7 @@
     <widget class="QComboBox" name="ClassesComboBox">
      <property name="geometry">
       <rect>
-       <x>0</x>
+       <x>10</x>
        <y>110</y>
        <width>100</width>
        <height>20</height>
@@ -324,7 +324,7 @@
     <widget class="QLabel" name="AlignmentLabel">
      <property name="geometry">
       <rect>
-       <x>120</x>
+       <x>130</x>
        <y>90</y>
        <width>80</width>
        <height>20</height>
@@ -342,7 +342,7 @@
     <widget class="QComboBox" name="AlignmentComboBox">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>120</x>
        <y>110</y>
        <width>100</width>
        <height>20</height>
@@ -699,7 +699,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_cha_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>350</y>
        <width>80</width>
        <height>25</height>
@@ -717,7 +717,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_con_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>188</y>
        <width>80</width>
        <height>25</height>
@@ -735,7 +735,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_str_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>80</y>
        <width>80</width>
        <height>25</height>
@@ -753,7 +753,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_int_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>242</y>
        <width>80</width>
        <height>25</height>
@@ -771,7 +771,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_wis_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>296</y>
        <width>80</width>
        <height>25</height>
@@ -789,7 +789,7 @@ selection-background-color: rgb(255, 6, 176);</string>
     <widget class="QLabel" name="race_mod_dex_label">
      <property name="geometry">
       <rect>
-       <x>110</x>
+       <x>130</x>
        <y>134</y>
        <width>80</width>
        <height>25</height>
