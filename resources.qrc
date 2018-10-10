@@ -1,5 +1,7 @@
 <RCC>
     <qresource prefix="/res">
-        <file>resources/ramka2.2.png</file>
+        <file>res/fon01.png</file>
+        <file>res/backg_taverna.png</file>
+        <file>res/frame.png</file>
     </qresource>
 </RCC>
