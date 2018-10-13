@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Avatar creator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="layoutWidget">
@@ -28,11 +28,16 @@
       <widget class="QLabel" name="body_type_label">
        <property name="font">
         <font>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Body Type</string>
@@ -50,11 +55,16 @@
       <widget class="QLabel" name="race_label">
        <property name="font">
         <font>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Race</string>
@@ -87,11 +97,16 @@
       <widget class="QLabel" name="hair_label">
        <property name="font">
         <font>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Hair</string>
@@ -118,11 +133,16 @@
       <widget class="QLabel" name="eyes_label">
        <property name="font">
         <font>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Eyes</string>
@@ -149,11 +169,16 @@
       <widget class="QLabel" name="rot_label">
        <property name="font">
         <font>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);</string>
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>Rot</string>
@@ -203,7 +228,7 @@
      </size>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/res/res/backg_taverna.png);</string>
+     <string notr="true">background-image: url(:/BackRes/res/backg_taverna.png);</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_Save">
@@ -235,7 +260,7 @@
      <bool>true</bool>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/res/res/frame.png);</string>
+     <string notr="true">background-image: url(:/BackRes/res/frame.png);</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView">

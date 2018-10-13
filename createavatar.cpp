@@ -23,19 +23,19 @@ void CreateAvatar::update()
     if (ui->SexComboBox->currentIndex()==0)
     {
         face_create_scene->clear();
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/male_base/f_base/%1.png").arg(QString::number(integerVector.at(0))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/male_base/y_base/%1.png").arg(QString::number(integerVector.at(2))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/male_base/h_base/%1.png").arg(QString::number(integerVector.at(1))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/male_base/r_base/%1.png").arg(QString::number(integerVector.at(3))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/male_base/f_base/%1.png").arg(QString::number(integerVector.at(0))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/male_base/y_base/%1.png").arg(QString::number(integerVector.at(2))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/male_base/h_base/%1.png").arg(QString::number(integerVector.at(1))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/male_base/r_base/%1.png").arg(QString::number(integerVector.at(3))));
         ui->graphicsView->setScene(face_create_scene);
     }
     else
     {
         face_create_scene->clear();
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/female_base/f_base/%1.png").arg(QString::number(integerVector.at(0))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/female_base/y_base/%1.png").arg(QString::number(integerVector.at(2))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/female_base/h_base/%1.png").arg(QString::number(integerVector.at(1))));
-        face_create_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/female_base/r_base/%1.png").arg(QString::number(integerVector.at(3))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/female_base/f_base/%1.png").arg(QString::number(integerVector.at(0))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/female_base/y_base/%1.png").arg(QString::number(integerVector.at(2))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/female_base/h_base/%1.png").arg(QString::number(integerVector.at(1))));
+        face_create_scene->addPixmap(QString(":/Face_createRes/res/female_base/r_base/%1.png").arg(QString::number(integerVector.at(3))));
         ui->graphicsView->setScene(face_create_scene);
     }
 }

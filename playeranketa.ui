@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>PlayerAnketa</string>
+   <string>DnD hero creator</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGraphicsView" name="graphicsView_Avatar">
@@ -38,11 +38,15 @@
     </property>
     <property name="font">
      <font>
-      <family>Bodoni MT</family>
+      <family>Bernard MT Condensed</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
     </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView_background">
@@ -55,7 +59,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/res/res/fon01.png);</string>
+     <string notr="true">background-image: url(:/BackRes/res/fon01.png);</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="BodyDategroupBox">
@@ -85,11 +89,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="HeightLabel">
@@ -103,14 +111,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Height</string>
@@ -127,14 +137,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Sex</string>
@@ -151,14 +163,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Age</string>
@@ -175,14 +189,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
      <property name="text">
       <string>Weight</string>
@@ -199,11 +214,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="WeightdoubleSpinBox">
@@ -217,11 +236,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="AgedoubleSpinBox">
@@ -235,11 +258,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_year">
@@ -253,14 +280,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>yr</string>
@@ -277,14 +306,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>kg</string>
@@ -301,14 +332,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>sm</string>
@@ -329,11 +362,15 @@ color: rgb(255, 255, 255);</string>
       <widget class="QPushButton" name="LoadpushButton">
        <property name="font">
         <font>
-         <family>Bodoni MT</family>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
        </property>
        <property name="text">
         <string>Load avatar</string>
@@ -344,11 +381,15 @@ color: rgb(255, 255, 255);</string>
       <widget class="QPushButton" name="CreatepushButton">
        <property name="font">
         <font>
-         <family>Bodoni MT</family>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
        </property>
        <property name="text">
         <string>Create avatar</string>
@@ -384,9 +425,12 @@ color: rgb(255, 255, 255);</string>
       <rect>
        <x>10</x>
        <y>294</y>
-       <width>39</width>
-       <height>19</height>
+       <width>40</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Cha_label">
@@ -400,15 +444,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgba(240, 0, 4);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Cha</string>
@@ -425,14 +470,16 @@ color: rgba(240, 0, 4);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Str</string>
@@ -443,9 +490,12 @@ color: rgba(240, 0, 4);</string>
       <rect>
        <x>10</x>
        <y>40</y>
-       <width>39</width>
-       <height>19</height>
+       <width>40</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Dex_label">
@@ -459,15 +509,16 @@ color: rgba(240, 0, 4);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(179, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Dex</string>
@@ -478,9 +529,12 @@ color: rgb(179, 255, 0);</string>
       <rect>
        <x>10</x>
        <y>91</y>
-       <width>39</width>
-       <height>19</height>
+       <width>40</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="Con_spinBox">
@@ -488,9 +542,12 @@ color: rgb(179, 255, 0);</string>
       <rect>
        <x>10</x>
        <y>142</y>
-       <width>39</width>
-       <height>19</height>
+       <width>40</width>
+       <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Con_label">
@@ -504,15 +561,16 @@ color: rgb(179, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 170, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Con</string>
@@ -535,7 +593,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -562,7 +620,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -571,7 +629,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -618,7 +676,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -645,7 +703,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -654,7 +712,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -701,7 +759,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -728,7 +786,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -737,7 +795,7 @@ color: rgb(255, 170, 0);</string>
           <color alpha="255">
            <red>255</red>
            <green>255</green>
-           <blue>0</blue>
+           <blue>255</blue>
           </color>
          </brush>
         </colorrole>
@@ -782,16 +840,16 @@ color: rgb(255, 170, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(255, 255, 0);
-</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Int</string>
@@ -802,9 +860,12 @@ color: rgb(255, 255, 0);
       <rect>
        <x>10</x>
        <y>192</y>
-       <width>39</width>
+       <width>40</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="Wis_label">
@@ -818,15 +879,16 @@ color: rgb(255, 255, 0);
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);
-color: rgb(0, 0, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Wis</string>
@@ -837,9 +899,12 @@ color: rgb(0, 0, 0);</string>
       <rect>
        <x>10</x>
        <y>243</y>
-       <width>39</width>
+       <width>40</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="custom_label_2">
@@ -853,14 +918,15 @@ color: rgb(0, 0, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -878,14 +944,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -903,14 +970,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -928,14 +996,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -953,14 +1022,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -978,14 +1048,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1003,14 +1074,16 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Stats</string>
@@ -1027,14 +1100,16 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Result stats</string>
@@ -1051,14 +1126,16 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Race mod</string>
@@ -1075,15 +1152,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
-background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
      <property name="text">
       <string>=</string>
@@ -1100,14 +1177,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1125,14 +1203,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1150,14 +1229,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1175,14 +1255,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1200,14 +1281,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Adobe Fan Heiti Std B</family>
-       <pointsize>14</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1225,14 +1307,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1250,14 +1333,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1275,14 +1359,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1300,14 +1385,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1325,14 +1411,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1350,14 +1437,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1375,14 +1463,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1400,14 +1489,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1425,14 +1515,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1450,14 +1541,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1475,14 +1567,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1500,14 +1593,15 @@ background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
 background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
@@ -1526,15 +1620,15 @@ background-color: rgba(255, 255, 255, 0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Bodoni MT</family>
+      <family>Bernard MT Condensed</family>
       <pointsize>12</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(75, 75, 75, 0);
-color: rgb(255, 255, 255);</string>
+     <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
     </property>
     <property name="text">
      <string>Bio:</string>
@@ -1567,14 +1661,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgb(255, 255, 255,0);</string>
      </property>
      <property name="text">
       <string>Race</string>
@@ -1591,14 +1687,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgb(255, 255, 255,0);</string>
      </property>
      <property name="text">
       <string>Subrace</string>
@@ -1615,11 +1713,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="SubRaceTextEdit">
@@ -1633,11 +1735,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="ClassesLabel">
@@ -1651,14 +1757,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgb(255, 255, 255,0);</string>
      </property>
      <property name="text">
       <string>Classes</string>
@@ -1675,11 +1783,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
     <widget class="QLabel" name="AlignmentLabel">
@@ -1693,14 +1805,16 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgb(255, 255, 255,0);</string>
      </property>
      <property name="text">
       <string>Alignment</string>
@@ -1717,11 +1831,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
    </widget>
@@ -1739,11 +1857,15 @@ color: rgb(255, 255, 255);</string>
       <widget class="QPushButton" name="pushButton_saveAnket">
        <property name="font">
         <font>
-         <family>Bodoni MT</family>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
        </property>
        <property name="text">
         <string>SaveAnket</string>
@@ -1754,11 +1876,15 @@ color: rgb(255, 255, 255);</string>
       <widget class="QPushButton" name="ExitPushButton">
        <property name="font">
         <font>
-         <family>Bodoni MT</family>
+         <family>Bernard MT Condensed</family>
          <pointsize>12</pointsize>
-         <weight>75</weight>
-         <bold>true</bold>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
        </property>
        <property name="text">
         <string>Exit</string>
@@ -1777,7 +1903,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/res/res/frame.png);</string>
+     <string notr="true">background-image: url(:/BackRes/res/frame.png);</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="NamegroupBox">
@@ -1815,11 +1941,15 @@ color: rgb(255, 255, 255);</string>
      </property>
      <property name="font">
       <font>
-       <family>Bodoni MT</family>
+       <family>Bernard MT Condensed</family>
        <pointsize>12</pointsize>
-       <weight>75</weight>
-       <bold>true</bold>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
      </property>
     </widget>
    </widget>

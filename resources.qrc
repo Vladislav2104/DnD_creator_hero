@@ -1,8 +1,49 @@
 <RCC>
-    <qresource prefix="/res">
+    <qresource prefix="/BackRes">
         <file>res/fon01.png</file>
         <file>res/backg_taverna.png</file>
         <file>res/frame.png</file>
         <file>res/FontGot.ttf</file>
+    </qresource>
+    <qresource prefix="/Face_createRes">
+        <file>res/male_base/f_base/1.png</file>
+        <file>res/male_base/f_base/2.png</file>
+        <file>res/male_base/f_base/3.png</file>
+        <file>res/male_base/f_base/4.png</file>
+        <file>res/male_base/f_base/5.png</file>
+        <file>res/male_base/h_base/1.png</file>
+        <file>res/male_base/h_base/2.png</file>
+        <file>res/male_base/h_base/3.png</file>
+        <file>res/male_base/h_base/4.png</file>
+        <file>res/male_base/r_base/1.png</file>
+        <file>res/male_base/r_base/2.png</file>
+        <file>res/male_base/r_base/3.png</file>
+        <file>res/male_base/r_base/4.png</file>
+        <file>res/male_base/r_base/5.png</file>
+        <file>res/male_base/y_base/1.png</file>
+        <file>res/male_base/y_base/2.png</file>
+        <file>res/male_base/y_base/3.png</file>
+        <file>res/male_base/y_base/4.png</file>
+        <file>res/male_base/y_base/5.png</file>
+        <file>res/female_base/f_base/1.png</file>
+        <file>res/female_base/f_base/2.png</file>
+        <file>res/female_base/f_base/3.png</file>
+        <file>res/female_base/f_base/4.png</file>
+        <file>res/female_base/f_base/5.png</file>
+        <file>res/female_base/h_base/1.png</file>
+        <file>res/female_base/h_base/2.png</file>
+        <file>res/female_base/h_base/3.png</file>
+        <file>res/female_base/h_base/4.png</file>
+        <file>res/female_base/h_base/5.png</file>
+        <file>res/female_base/r_base/1.png</file>
+        <file>res/female_base/r_base/2.png</file>
+        <file>res/female_base/r_base/3.png</file>
+        <file>res/female_base/r_base/4.png</file>
+        <file>res/female_base/r_base/5.png</file>
+        <file>res/female_base/y_base/1.png</file>
+        <file>res/female_base/y_base/2.png</file>
+        <file>res/female_base/y_base/3.png</file>
+        <file>res/female_base/y_base/4.png</file>
+        <file>res/female_base/y_base/5.png</file>
     </qresource>
 </RCC>

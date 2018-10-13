@@ -62,9 +62,14 @@ public:
         body_type_label = new QLabel(layoutWidget);
         body_type_label->setObjectName(QStringLiteral("body_type_label"));
         QFont font;
+        font.setFamily(QStringLiteral("Bernard MT Condensed"));
         font.setPointSize(12);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
         body_type_label->setFont(font);
-        body_type_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        body_type_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(255, 255, 255);"));
 
         verticalLayout->addWidget(body_type_label);
 
@@ -77,7 +82,8 @@ public:
         race_label = new QLabel(layoutWidget);
         race_label->setObjectName(QStringLiteral("race_label"));
         race_label->setFont(font);
-        race_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        race_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(255, 255, 255);"));
 
         verticalLayout->addWidget(race_label);
 
@@ -95,7 +101,8 @@ public:
         hair_label = new QLabel(layoutWidget);
         hair_label->setObjectName(QStringLiteral("hair_label"));
         hair_label->setFont(font);
-        hair_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        hair_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(255, 255, 255);"));
 
         verticalLayout->addWidget(hair_label);
 
@@ -111,7 +118,8 @@ public:
         eyes_label = new QLabel(layoutWidget);
         eyes_label->setObjectName(QStringLiteral("eyes_label"));
         eyes_label->setFont(font);
-        eyes_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        eyes_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(255, 255, 255);"));
 
         verticalLayout->addWidget(eyes_label);
 
@@ -127,7 +135,8 @@ public:
         rot_label = new QLabel(layoutWidget);
         rot_label->setObjectName(QStringLiteral("rot_label"));
         rot_label->setFont(font);
-        rot_label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        rot_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(255, 255, 255);"));
 
         verticalLayout->addWidget(rot_label);
 
@@ -146,7 +155,7 @@ public:
         graphicsView_backg->setGeometry(QRect(-10, -10, 451, 381));
         graphicsView_backg->setMinimumSize(QSize(424, 331));
         graphicsView_backg->setMaximumSize(QSize(10000, 10000));
-        graphicsView_backg->setStyleSheet(QStringLiteral("background-image: url(:/res/res/backg_taverna.png);"));
+        graphicsView_backg->setStyleSheet(QStringLiteral("background-image: url(:/BackRes/res/backg_taverna.png);"));
         pushButton_Save = new QPushButton(centralwidget);
         pushButton_Save->setObjectName(QStringLiteral("pushButton_Save"));
         pushButton_Save->setGeometry(QRect(20, 270, 151, 21));
@@ -155,7 +164,7 @@ public:
         graphicsView_frame->setObjectName(QStringLiteral("graphicsView_frame"));
         graphicsView_frame->setGeometry(QRect(190, 15, 203, 293));
         graphicsView_frame->setAutoFillBackground(true);
-        graphicsView_frame->setStyleSheet(QStringLiteral("background-image: url(:/res/res/frame.png);"));
+        graphicsView_frame->setStyleSheet(QStringLiteral("background-image: url(:/BackRes/res/frame.png);"));
         graphicsView = new QGraphicsView(centralwidget);
         graphicsView->setObjectName(QStringLiteral("graphicsView"));
         graphicsView->setGeometry(QRect(210, 30, 161, 261));
@@ -180,7 +189,7 @@ public:
 
     void retranslateUi(QMainWindow *CreateAvatar)
     {
-        CreateAvatar->setWindowTitle(QApplication::translate("CreateAvatar", "MainWindow", Q_NULLPTR));
+        CreateAvatar->setWindowTitle(QApplication::translate("CreateAvatar", "Avatar creator", Q_NULLPTR));
         body_type_label->setText(QApplication::translate("CreateAvatar", "Body Type", Q_NULLPTR));
         race_label->setText(QApplication::translate("CreateAvatar", "Race", Q_NULLPTR));
         hair_label->setText(QApplication::translate("CreateAvatar", "Hair", Q_NULLPTR));
