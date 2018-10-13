@@ -8,6 +8,7 @@
 #include<QGraphicsScene>
 #include<QDesktopWidget>
 #include<QsqlQuery>
+#include<QToolTip>
 #include<QComboBox>
 #include<QTextEdit>
 #include<QSpinBox>
@@ -42,6 +43,7 @@ public:
     int race_buff_wis;
     int race_buff_cha;
     int result_stats;
+    int NameNum = 0;
 
     ~PlayerAnketa();
 
@@ -49,7 +51,7 @@ private slots:
 
     void loadDB();
 
-    void pop_upChar_cs();
+    void PopUP_Tips();
 
     void on_RaceComboBox_currentIndexChanged(int index);
 

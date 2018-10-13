@@ -3,5 +3,6 @@
         <file>res/fon01.png</file>
         <file>res/backg_taverna.png</file>
         <file>res/frame.png</file>
+        <file>res/FontGot.ttf</file>
     </qresource>
 </RCC>

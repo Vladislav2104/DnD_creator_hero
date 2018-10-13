@@ -45,7 +45,6 @@ public:
     QPushButton *pushButton_Save;
     QGraphicsView *graphicsView_frame;
     QGraphicsView *graphicsView;
-    QPushButton *pushButton_Load;
 
     void setupUi(QMainWindow *CreateAvatar)
     {
@@ -150,7 +149,7 @@ public:
         graphicsView_backg->setStyleSheet(QStringLiteral("background-image: url(:/res/res/backg_taverna.png);"));
         pushButton_Save = new QPushButton(centralwidget);
         pushButton_Save->setObjectName(QStringLiteral("pushButton_Save"));
-        pushButton_Save->setGeometry(QRect(20, 270, 80, 21));
+        pushButton_Save->setGeometry(QRect(20, 270, 151, 21));
         pushButton_Save->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
         graphicsView_frame = new QGraphicsView(centralwidget);
         graphicsView_frame->setObjectName(QStringLiteral("graphicsView_frame"));
@@ -167,16 +166,11 @@ public:
         QBrush brush1(QColor(0, 0, 0, 255));
         brush1.setStyle(Qt::NoBrush);
         graphicsView->setForegroundBrush(brush1);
-        pushButton_Load = new QPushButton(centralwidget);
-        pushButton_Load->setObjectName(QStringLiteral("pushButton_Load"));
-        pushButton_Load->setGeometry(QRect(100, 270, 80, 21));
-        pushButton_Load->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
         CreateAvatar->setCentralWidget(centralwidget);
         graphicsView_backg->raise();
         layoutWidget->raise();
         pushButton_Save->raise();
         graphicsView_frame->raise();
-        pushButton_Load->raise();
         graphicsView->raise();
 
         retranslateUi(CreateAvatar);
@@ -193,7 +187,6 @@ public:
         eyes_label->setText(QApplication::translate("CreateAvatar", "Eyes", Q_NULLPTR));
         rot_label->setText(QApplication::translate("CreateAvatar", "Rot", Q_NULLPTR));
         pushButton_Save->setText(QApplication::translate("CreateAvatar", "Save", Q_NULLPTR));
-        pushButton_Load->setText(QApplication::translate("CreateAvatar", "Load", Q_NULLPTR));
     } // retranslateUi
 
 };

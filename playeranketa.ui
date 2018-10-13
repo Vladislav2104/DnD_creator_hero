@@ -36,6 +36,14 @@
       <height>231</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
    </widget>
    <widget class="QGraphicsView" name="graphicsView_background">
     <property name="geometry">
@@ -50,59 +58,59 @@
      <string notr="true">background-image: url(:/res/res/fon01.png);</string>
     </property>
    </widget>
-   <widget class="QLabel" name="NameLabel">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>20</y>
-      <width>46</width>
-      <height>13</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>12</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Name</string>
-    </property>
-   </widget>
    <widget class="QGroupBox" name="BodyDategroupBox">
     <property name="geometry">
      <rect>
-      <x>260</x>
-      <y>80</y>
-      <width>191</width>
-      <height>131</height>
+      <x>255</x>
+      <y>70</y>
+      <width>221</width>
+      <height>90</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(75, 75, 75, 150);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="title">
-     <string>Body</string>
+     <string/>
     </property>
     <widget class="QComboBox" name="SexComboBox">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>40</y>
+       <x>0</x>
+       <y>20</y>
        <width>81</width>
        <height>22</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
     </widget>
     <widget class="QLabel" name="HeightLabel">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>20</y>
+       <x>110</x>
+       <y>0</y>
        <width>51</width>
        <height>19</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Height</string>
@@ -111,16 +119,22 @@
     <widget class="QLabel" name="SexLabel">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>20</y>
+       <x>0</x>
+       <y>0</y>
        <width>31</width>
        <height>19</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Sex</string>
@@ -129,16 +143,22 @@
     <widget class="QLabel" name="AgeLabel">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>80</y>
+       <x>0</x>
+       <y>40</y>
        <width>31</width>
        <height>19</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Age</string>
@@ -147,16 +167,22 @@
     <widget class="QLabel" name="WeightLabel">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>80</y>
+       <x>110</x>
+       <y>40</y>
        <width>51</width>
        <height>19</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Weight</string>
@@ -165,65 +191,167 @@
     <widget class="QDoubleSpinBox" name="HeightdoubleSpinBox">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>40</y>
+       <x>110</x>
+       <y>20</y>
        <width>80</width>
-       <height>22</height>
+       <height>21</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
     </widget>
     <widget class="QDoubleSpinBox" name="WeightdoubleSpinBox">
      <property name="geometry">
       <rect>
-       <x>100</x>
-       <y>100</y>
+       <x>110</x>
+       <y>60</y>
        <width>80</width>
        <height>22</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
     </widget>
-    <widget class="QDoubleSpinBox" name="AgedoubleSpinBox">
+    <widget class="QSpinBox" name="AgedoubleSpinBox">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>100</y>
+       <x>0</x>
+       <y>60</y>
        <width>80</width>
        <height>22</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_year">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>60</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>yr</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_kg">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>60</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>kg</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_sm">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>20</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>sm</string>
      </property>
     </widget>
    </widget>
    <widget class="QWidget" name="layoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>500</x>
+      <x>480</x>
       <y>320</y>
-      <width>174</width>
-      <height>28</height>
+      <width>194</width>
+      <height>31</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_Button">
      <item>
-      <widget class="QPushButton" name="CreatepushButton">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Create avatar</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QPushButton" name="LoadpushButton">
        <property name="font">
         <font>
-         <pointsize>10</pointsize>
+         <family>Bodoni MT</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
         </font>
        </property>
        <property name="text">
         <string>Load avatar</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CreatepushButton">
+       <property name="font">
+        <font>
+         <family>Bodoni MT</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Create avatar</string>
        </property>
       </widget>
      </item>
@@ -233,9 +361,9 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>220</y>
-      <width>341</width>
-      <height>391</height>
+      <y>170</y>
+      <width>321</width>
+      <height>321</height>
      </rect>
     </property>
     <property name="font">
@@ -249,243 +377,491 @@
 color: rgb(255, 255, 255);</string>
     </property>
     <property name="title">
-     <string>Stats</string>
+     <string/>
     </property>
-    <widget class="QLabel" name="Stats_res_label">
-     <property name="geometry">
-      <rect>
-       <x>240</x>
-       <y>30</y>
-       <width>80</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Result stats</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Stats_label">
-     <property name="geometry">
-      <rect>
-       <x>15</x>
-       <y>30</y>
-       <width>80</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Stats</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Race_mod_label">
-     <property name="geometry">
-      <rect>
-       <x>110</x>
-       <y>30</y>
-       <width>80</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Race mod</string>
-     </property>
-    </widget>
     <widget class="QSpinBox" name="Cha_spinBox">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>350</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>294</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
      </property>
     </widget>
-    <widget class="QSpinBox" name="Wis_spinBox">
+    <widget class="QLabel" name="Cha_label">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>296</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>274</y>
+       <width>39</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgba(240, 0, 4);</string>
+     </property>
+     <property name="text">
+      <string>Cha</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Str_label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>24</y>
+       <width>19</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Str</string>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="Str_spinBox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
      </property>
     </widget>
     <widget class="QLabel" name="Dex_label">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>109</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>74</y>
+       <width>26</width>
+       <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(179, 255, 0);</string>
      </property>
      <property name="text">
       <string>Dex</string>
      </property>
     </widget>
-    <widget class="QLabel" name="Int_label">
+    <widget class="QSpinBox" name="Dex_spinBox">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>217</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>91</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Int</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Con_label">
-     <property name="geometry">
-      <rect>
-       <x>15</x>
-       <y>163</y>
-       <width>35</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Con</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="Cha_label">
-     <property name="geometry">
-      <rect>
-       <x>15</x>
-       <y>325</y>
-       <width>35</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Cha</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="Con_spinBox">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>188</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>142</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
      </property>
     </widget>
-    <widget class="QSpinBox" name="Dex_spinBox">
+    <widget class="QLabel" name="Con_label">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>134</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>124</y>
+       <width>26</width>
+       <height>20</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 170, 0);</string>
+     </property>
+     <property name="text">
+      <string>Con</string>
+     </property>
     </widget>
-    <widget class="QSpinBox" name="Str_spinBox">
+    <widget class="QLabel" name="Int_label">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>80</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>174</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
+     </property>
+     <property name="palette">
+      <palette>
+       <active>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </active>
+       <inactive>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </inactive>
+       <disabled>
+        <colorrole role="WindowText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Button">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Light">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Text">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ButtonText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Base">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="Window">
+         <brush brushstyle="SolidPattern">
+          <color alpha="0">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipBase">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>255</red>
+           <green>255</green>
+           <blue>255</blue>
+          </color>
+         </brush>
+        </colorrole>
+        <colorrole role="ToolTipText">
+         <brush brushstyle="SolidPattern">
+          <color alpha="255">
+           <red>0</red>
+           <green>0</green>
+           <blue>0</blue>
+          </color>
+         </brush>
+        </colorrole>
+       </disabled>
+      </palette>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(255, 255, 0);
+</string>
+     </property>
+     <property name="text">
+      <string>Int</string>
      </property>
     </widget>
     <widget class="QSpinBox" name="Int_spinBox">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>242</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>192</y>
+       <width>39</width>
+       <height>20</height>
       </rect>
      </property>
     </widget>
     <widget class="QLabel" name="Wis_label">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>271</y>
-       <width>35</width>
-       <height>25</height>
+       <x>10</x>
+       <y>224</y>
+       <width>39</width>
+       <height>19</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);
+color: rgb(0, 0, 0);</string>
      </property>
      <property name="text">
       <string>Wis</string>
      </property>
     </widget>
-    <widget class="QLabel" name="Str_label">
+    <widget class="QSpinBox" name="Wis_spinBox">
      <property name="geometry">
       <rect>
-       <x>15</x>
-       <y>55</y>
-       <width>35</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>Str</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="custom_label_6">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>350</y>
-       <width>20</width>
+       <x>10</x>
+       <y>243</y>
+       <width>39</width>
        <height>20</height>
       </rect>
      </property>
+    </widget>
+    <widget class="QLabel" name="custom_label_2">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>35</y>
+       <width>16</width>
+       <height>24</height>
+      </rect>
+     </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>+</string>
@@ -494,34 +870,23 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="custom_label_4">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>242</y>
-       <width>20</width>
-       <height>20</height>
+       <x>90</x>
+       <y>86</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>+</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="custom_label">
-     <property name="geometry">
-      <rect>
-       <x>80</x>
-       <y>80</y>
-       <width>20</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>+</string>
@@ -530,34 +895,48 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="custom_label_3">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>188</y>
-       <width>20</width>
-       <height>20</height>
+       <x>90</x>
+       <y>137</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>+</string>
      </property>
     </widget>
-    <widget class="QLabel" name="custom_label_2">
+    <widget class="QLabel" name="custom_label_6">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>134</y>
-       <width>20</width>
-       <height>20</height>
+       <x>90</x>
+       <y>238</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>+</string>
@@ -566,160 +945,145 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="custom_label_5">
      <property name="geometry">
       <rect>
-       <x>80</x>
-       <y>296</y>
-       <width>20</width>
-       <height>20</height>
+       <x>90</x>
+       <y>187</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>+</string>
      </property>
     </widget>
-    <widget class="QLabel" name="race_mod_cha_label">
+    <widget class="QLabel" name="custom_label">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>350</y>
-       <width>80</width>
-       <height>25</height>
+       <x>90</x>
+       <y>289</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>12</pointsize>
+       <family>Adobe Fan Heiti Std B</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>cha_race_mod</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="race_mod_con_label">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>188</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
-      <string>con_race_mod</string>
+      <string>+</string>
      </property>
     </widget>
-    <widget class="QLabel" name="race_mod_str_label">
+    <widget class="QLabel" name="Stats_label">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>80</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>str_race_mod</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="race_mod_int_label">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>242</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>int_race_mod</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="race_mod_wis_label">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>296</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>wis_race_mod</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="race_mod_dex_label">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>134</y>
-       <width>80</width>
-       <height>25</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>12</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>dex_race_mod</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="custom_label_12">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>350</y>
-       <width>20</width>
+       <x>10</x>
+       <y>4</y>
+       <width>32</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
      <property name="text">
-      <string>=</string>
+      <string>Stats</string>
      </property>
     </widget>
-    <widget class="QLabel" name="custom_label_11">
+    <widget class="QLabel" name="Stats_res_label">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>296</y>
-       <width>20</width>
+       <x>230</x>
+       <y>4</y>
+       <width>76</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>14</pointsize>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Result stats</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="Race_mod_label">
+     <property name="geometry">
+      <rect>
+       <x>125</x>
+       <y>4</y>
+       <width>66</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Race mod</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="custom_label_7">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>36</y>
+       <width>16</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Fan Heiti Std B</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>=</string>
@@ -728,52 +1092,23 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="custom_label_8">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>134</y>
-       <width>20</width>
-       <height>20</height>
+       <x>214</x>
+       <y>87</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
-     <property name="text">
-      <string>=</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="custom_label_10">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>242</y>
-       <width>20</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
-     </property>
-     <property name="text">
-      <string>=</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="custom_label_7">
-     <property name="geometry">
-      <rect>
-       <x>210</x>
-       <y>80</y>
-       <width>20</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <pointsize>14</pointsize>
-      </font>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>=</string>
@@ -782,127 +1117,401 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="custom_label_9">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>188</y>
-       <width>20</width>
-       <height>20</height>
+       <x>214</x>
+       <y>138</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Adobe Fan Heiti Std B</family>
        <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>=</string>
      </property>
     </widget>
-    <widget class="QLabel" name="cha_stats_label">
+    <widget class="QLabel" name="custom_label_10">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>350</y>
-       <width>80</width>
-       <height>20</height>
+       <x>214</x>
+       <y>188</y>
+       <width>16</width>
+       <height>24</height>
       </rect>
      </property>
      <property name="font">
       <font>
-       <pointsize>12</pointsize>
+       <family>Adobe Fan Heiti Std B</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
      <property name="text">
-      <string>cha_stats</string>
+      <string>=</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="custom_label_11">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>239</y>
+       <width>16</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Fan Heiti Std B</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>=</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="custom_label_12">
+     <property name="geometry">
+      <rect>
+       <x>214</x>
+       <y>290</y>
+       <width>16</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Adobe Fan Heiti Std B</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>=</string>
      </property>
     </widget>
     <widget class="QLabel" name="str_stats_label">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>80</y>
-       <width>80</width>
+       <x>260</x>
+       <y>36</y>
+       <width>60</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>str_stats</string>
      </property>
     </widget>
-    <widget class="QLabel" name="con_stats_label">
+    <widget class="QLabel" name="dex_stats_label">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>188</y>
-       <width>80</width>
+       <x>260</x>
+       <y>87</y>
+       <width>60</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
      <property name="text">
-      <string>con_stats</string>
+      <string>dex_stats</string>
      </property>
     </widget>
     <widget class="QLabel" name="int_stats_label">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>242</y>
-       <width>80</width>
+       <x>260</x>
+       <y>188</y>
+       <width>60</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>int_stats</string>
      </property>
     </widget>
-    <widget class="QLabel" name="wis_stats_label">
+    <widget class="QLabel" name="con_stats_label">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>296</y>
-       <width>80</width>
+       <x>260</x>
+       <y>138</y>
+       <width>60</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>con_stats</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="wis_stats_label">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>239</y>
+       <width>60</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>wis_stats</string>
      </property>
     </widget>
-    <widget class="QLabel" name="dex_stats_label">
+    <widget class="QLabel" name="cha_stats_label">
      <property name="geometry">
       <rect>
-       <x>250</x>
-       <y>134</y>
-       <width>80</width>
+       <x>260</x>
+       <y>290</y>
+       <width>60</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
      </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
      <property name="text">
-      <string>dex_stats</string>
+      <string>cha_stats</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_con_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>139</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_str_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>39</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_dex_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>89</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_wis_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>243</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_int_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>192</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="race_mod_cha_label">
+     <property name="geometry">
+      <rect>
+       <x>150</x>
+       <y>294</y>
+       <width>70</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgba(255, 255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>race_mode</string>
      </property>
     </widget>
    </widget>
@@ -910,15 +1519,22 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>350</y>
+      <y>355</y>
       <width>47</width>
       <height>13</height>
      </rect>
     </property>
     <property name="font">
      <font>
+      <family>Bodoni MT</family>
       <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
      </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(75, 75, 75, 0);
+color: rgb(255, 255, 255);</string>
     </property>
     <property name="text">
      <string>Bio:</string>
@@ -928,27 +1544,37 @@ color: rgb(255, 255, 255);</string>
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>60</y>
-      <width>241</width>
-      <height>151</height>
+      <y>70</y>
+      <width>240</width>
+      <height>90</height>
      </rect>
     </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(75, 75, 75, 150);
+color: rgb(255, 255, 255);</string>
+    </property>
     <property name="title">
-     <string>Player</string>
+     <string/>
     </property>
     <widget class="QLabel" name="RaceLabel">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
+       <x>0</x>
+       <y>0</y>
        <width>80</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Race</string>
@@ -957,16 +1583,22 @@ color: rgb(255, 255, 255);</string>
     <widget class="QLabel" name="SubRaceLabel">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>30</y>
+       <x>120</x>
+       <y>0</y>
        <width>80</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Subrace</string>
@@ -975,36 +1607,58 @@ color: rgb(255, 255, 255);</string>
     <widget class="QComboBox" name="RaceComboBox">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>50</y>
+       <x>0</x>
+       <y>20</y>
        <width>100</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
     </widget>
     <widget class="QLineEdit" name="SubRaceTextEdit">
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>50</y>
+       <y>20</y>
        <width>100</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
     </widget>
     <widget class="QLabel" name="ClassesLabel">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>90</y>
+       <x>0</x>
+       <y>40</y>
        <width>80</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Classes</string>
@@ -1013,26 +1667,40 @@ color: rgb(255, 255, 255);</string>
     <widget class="QComboBox" name="ClassesComboBox">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>110</y>
+       <x>0</x>
+       <y>60</y>
        <width>100</width>
        <height>20</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
     </widget>
     <widget class="QLabel" name="AlignmentLabel">
      <property name="geometry">
       <rect>
-       <x>130</x>
-       <y>90</y>
+       <x>120</x>
+       <y>40</y>
        <width>80</width>
        <height>20</height>
       </rect>
      </property>
      <property name="font">
       <font>
+       <family>Bodoni MT</family>
        <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
       </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
      </property>
      <property name="text">
       <string>Alignment</string>
@@ -1042,35 +1710,41 @@ color: rgb(255, 255, 255);</string>
      <property name="geometry">
       <rect>
        <x>120</x>
-       <y>110</y>
+       <y>60</y>
        <width>100</width>
        <height>20</height>
       </rect>
      </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
     </widget>
-   </widget>
-   <widget class="QLineEdit" name="NameTextEdit">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>431</width>
-      <height>21</height>
-     </rect>
-    </property>
    </widget>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>520</x>
-      <y>620</y>
-      <width>168</width>
-      <height>25</height>
+      <x>500</x>
+      <y>610</y>
+      <width>171</width>
+      <height>31</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <widget class="QPushButton" name="pushButton_saveAnket">
+       <property name="font">
+        <font>
+         <family>Bodoni MT</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>SaveAnket</string>
        </property>
@@ -1078,6 +1752,14 @@ color: rgb(255, 255, 255);</string>
      </item>
      <item>
       <widget class="QPushButton" name="ExitPushButton">
+       <property name="font">
+        <font>
+         <family>Bodoni MT</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
         <string>Exit</string>
        </property>
@@ -1098,18 +1780,60 @@ color: rgb(255, 255, 255);</string>
      <string notr="true">background-image: url(:/res/res/frame.png);</string>
     </property>
    </widget>
+   <widget class="QGroupBox" name="NamegroupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>461</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bodoni MT</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(75, 75, 75, 150);
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="title">
+     <string>Name</string>
+    </property>
+    <widget class="QLineEdit" name="NameTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>461</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bodoni MT</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </widget>
+   </widget>
    <zorder>graphicsView_background</zorder>
    <zorder>bio_textEdit</zorder>
-   <zorder>NameLabel</zorder>
    <zorder>BodyDategroupBox</zorder>
    <zorder>layoutWidget_4</zorder>
    <zorder>StatsgroupBox</zorder>
    <zorder>biograf_label</zorder>
    <zorder>RaceClassAliggroupBox</zorder>
-   <zorder>NameTextEdit</zorder>
    <zorder>horizontalLayoutWidget</zorder>
    <zorder>graphicsView_frame</zorder>
    <zorder>graphicsView_Avatar</zorder>
+   <zorder>NamegroupBox</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

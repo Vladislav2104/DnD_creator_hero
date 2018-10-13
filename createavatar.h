@@ -39,6 +39,7 @@ public:
     QString path;
     QAbstractSlider *HSlid,*HSlid2,*HSlid3,*HSlid4;
     QVector <int> integerVector;
+    int FaceNum = 0;
     ~CreateAvatar();
 
 private slots:

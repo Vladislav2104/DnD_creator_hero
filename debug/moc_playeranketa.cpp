@@ -20,7 +20,7 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PlayerAnketa_t {
     QByteArrayData data[19];
-    char stringdata0[421];
+    char stringdata0[418];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,25 +32,25 @@ static const qt_meta_stringdata_PlayerAnketa_t qt_meta_stringdata_PlayerAnketa =
 QT_MOC_LITERAL(0, 0, 12), // "PlayerAnketa"
 QT_MOC_LITERAL(1, 13, 6), // "loadDB"
 QT_MOC_LITERAL(2, 20, 0), // ""
-QT_MOC_LITERAL(3, 21, 13), // "pop_upChar_cs"
-QT_MOC_LITERAL(4, 35, 35), // "on_RaceComboBox_currentIndexC..."
-QT_MOC_LITERAL(5, 71, 5), // "index"
-QT_MOC_LITERAL(6, 77, 38), // "on_ClassesComboBox_currentInd..."
-QT_MOC_LITERAL(7, 116, 19), // "Result_label_update"
-QT_MOC_LITERAL(8, 136, 27), // "on_Str_spinBox_valueChanged"
-QT_MOC_LITERAL(9, 164, 4), // "arg1"
-QT_MOC_LITERAL(10, 169, 27), // "on_Cha_spinBox_valueChanged"
-QT_MOC_LITERAL(11, 197, 27), // "on_Dex_spinBox_valueChanged"
-QT_MOC_LITERAL(12, 225, 27), // "on_Con_spinBox_valueChanged"
-QT_MOC_LITERAL(13, 253, 27), // "on_Int_spinBox_valueChanged"
-QT_MOC_LITERAL(14, 281, 27), // "on_Wis_spinBox_valueChanged"
-QT_MOC_LITERAL(15, 309, 31), // "on_pushButton_saveAnket_clicked"
-QT_MOC_LITERAL(16, 341, 25), // "on_ExitPushButton_clicked"
-QT_MOC_LITERAL(17, 367, 27), // "on_CreatepushButton_clicked"
-QT_MOC_LITERAL(18, 395, 25) // "on_LoadpushButton_clicked"
+QT_MOC_LITERAL(3, 21, 10), // "PopUP_Tips"
+QT_MOC_LITERAL(4, 32, 35), // "on_RaceComboBox_currentIndexC..."
+QT_MOC_LITERAL(5, 68, 5), // "index"
+QT_MOC_LITERAL(6, 74, 38), // "on_ClassesComboBox_currentInd..."
+QT_MOC_LITERAL(7, 113, 19), // "Result_label_update"
+QT_MOC_LITERAL(8, 133, 27), // "on_Str_spinBox_valueChanged"
+QT_MOC_LITERAL(9, 161, 4), // "arg1"
+QT_MOC_LITERAL(10, 166, 27), // "on_Cha_spinBox_valueChanged"
+QT_MOC_LITERAL(11, 194, 27), // "on_Dex_spinBox_valueChanged"
+QT_MOC_LITERAL(12, 222, 27), // "on_Con_spinBox_valueChanged"
+QT_MOC_LITERAL(13, 250, 27), // "on_Int_spinBox_valueChanged"
+QT_MOC_LITERAL(14, 278, 27), // "on_Wis_spinBox_valueChanged"
+QT_MOC_LITERAL(15, 306, 31), // "on_pushButton_saveAnket_clicked"
+QT_MOC_LITERAL(16, 338, 25), // "on_ExitPushButton_clicked"
+QT_MOC_LITERAL(17, 364, 27), // "on_CreatepushButton_clicked"
+QT_MOC_LITERAL(18, 392, 25) // "on_LoadpushButton_clicked"
 
     },
-    "PlayerAnketa\0loadDB\0\0pop_upChar_cs\0"
+    "PlayerAnketa\0loadDB\0\0PopUP_Tips\0"
     "on_RaceComboBox_currentIndexChanged\0"
     "index\0on_ClassesComboBox_currentIndexChanged\0"
     "Result_label_update\0on_Str_spinBox_valueChanged\0"
@@ -123,7 +123,7 @@ void PlayerAnketa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->loadDB(); break;
-        case 1: _t->pop_upChar_cs(); break;
+        case 1: _t->PopUP_Tips(); break;
         case 2: _t->on_RaceComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 3: _t->on_ClassesComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
         case 4: _t->Result_label_update(); break;

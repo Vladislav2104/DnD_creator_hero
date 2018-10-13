@@ -7,12 +7,12 @@ PlayerAnketa::PlayerAnketa(QWidget *parent) :
     ui(new Ui::PlayerAnketa)
 {
     ui->setupUi(this);
+    PopUP_Tips();
     setFixedSize(690,650);
     loadDB();
-    pop_upChar_cs();
     avatar_load_scene = new QGraphicsScene;
-//    border_frame_scene = new QGraphicsScene;
     ui->graphicsView_Avatar->setScene(avatar_load_scene);
+//    border_frame_scene = new QGraphicsScene;
 //    ui->graphicsView_frame->setScene(border_frame_scene);
 //    border_frame_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/frame.png"));
 }
@@ -37,14 +37,14 @@ void PlayerAnketa::loadDB()
     ui->AlignmentComboBox->setModelColumn(2);
 }
 
-void PlayerAnketa::pop_upChar_cs()
+void PlayerAnketa::PopUP_Tips()
 {
-    ui->Str_label->setToolTip ("Strength - measures character's physical strength and endurance.");
-    ui->Dex_label->setToolTip ("Dexterity - contains coordination, agility, reaction speed, reflexes and a sense of balance.");
-    ui->Con_label->setToolTip ("Constitution - includes stamina, training, health and physical resistance to damage.");
-    ui->Int_label->setToolTip ("Intelligence - represents the character's memory, prudence, and ability to learn.");
-    ui->Wis_label->setToolTip ("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
-    ui->Cha_label->setToolTip ("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
+    ui->Str_label->setToolTip("Strength - measures character's physical strength and endurance");
+    ui->Dex_label->setToolTip("Dexterity - contains coordination, agility, reaction speed, reflexes and a sense of balance.");
+    ui->Con_label->setToolTip("Constitution - includes stamina, training, health and physical resistance to damage.");
+    ui->Int_label->setToolTip("Intelligence - represents the character's memory, prudence, and ability to learn.");
+    ui->Wis_label->setToolTip("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
+    ui->Cha_label->setToolTip("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
 }
 
 void PlayerAnketa::on_Str_spinBox_valueChanged(int)
@@ -114,6 +114,14 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
 
+        ui->HeightdoubleSpinBox->setMinimum(149);
+        ui->HeightdoubleSpinBox->setMaximum(230);
+        ui->WeightdoubleSpinBox->setMinimum(50);
+        ui->WeightdoubleSpinBox->setMaximum(130);
+        ui->AgedoubleSpinBox->setMinimum(15);
+        ui->AgedoubleSpinBox->setMaximum(80);
+
+
         break;
     case 1:
         race_buff_str=5;
@@ -130,6 +138,12 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
 
+        ui->HeightdoubleSpinBox->setMinimum(170);
+        ui->HeightdoubleSpinBox->setMaximum(230);
+        ui->WeightdoubleSpinBox->setMinimum(70);
+        ui->WeightdoubleSpinBox->setMaximum(130);
+        ui->AgedoubleSpinBox->setMinimum(15);
+        ui->AgedoubleSpinBox->setMaximum(120);
 
         break;
     case 2:
@@ -147,6 +161,13 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
 
+        ui->HeightdoubleSpinBox->setMinimum(180);
+        ui->HeightdoubleSpinBox->setMaximum(230);
+        ui->WeightdoubleSpinBox->setMinimum(50);
+        ui->WeightdoubleSpinBox->setMaximum(100);
+        ui->AgedoubleSpinBox->setMinimum(200);
+        ui->AgedoubleSpinBox->setMaximum(1500);
+
         break;
     case 3:
         race_buff_str=4;
@@ -162,6 +183,14 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
         ui->race_mod_int_label->setText(QString::number(race_buff_int));
         ui->race_mod_wis_label->setText(QString::number(race_buff_wis));
         ui->race_mod_cha_label->setText(QString::number(race_buff_cha));
+
+        ui->HeightdoubleSpinBox->setMinimum(120);
+        ui->HeightdoubleSpinBox->setMaximum(145);
+        ui->WeightdoubleSpinBox->setMinimum(60);
+        ui->WeightdoubleSpinBox->setMaximum(110);
+        ui->AgedoubleSpinBox->setMinimum(40);
+        ui->AgedoubleSpinBox->setMaximum(350);
+
         break;
     }
     Result_label_update();
@@ -209,15 +238,8 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
      QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
      QPainter painter(&image);
      ui->centralWidget->render(&painter);
-     image.save(QString(QApplication::applicationDirPath()+"/res/anketa1.png"));
-}
-
-PlayerAnketa::~PlayerAnketa()
-{
-    model->clear();
-    delete model;
-    db.close();
-    delete ui;
+     image.save(QString(QApplication::applicationDirPath()+"/res/Players/%1.png").arg(NameNum));
+     ++NameNum;
 }
 
 void PlayerAnketa::on_CreatepushButton_clicked()
@@ -235,4 +257,12 @@ void PlayerAnketa::on_LoadpushButton_clicked()
          avatar_load_scene->addPixmap(QPixmap(fileName).scaled(157,257));
          ui->graphicsView_Avatar->setScene(avatar_load_scene);
      }
+}
+
+PlayerAnketa::~PlayerAnketa()
+{
+    model->clear();
+    delete model;
+    db.close();
+    delete ui;
 }
