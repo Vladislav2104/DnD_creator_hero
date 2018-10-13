@@ -12,11 +12,11 @@ PlayerAnketa::PlayerAnketa(QWidget *parent) :
     loadDB();
     avatar_load_scene = new QGraphicsScene;
     ui->graphicsView_Avatar->setScene(avatar_load_scene);
-//    border_frame_scene = new QGraphicsScene;
-//    ui->graphicsView_frame->setScene(border_frame_scene);
-//    border_frame_scene->addPixmap(QString(QApplication::applicationDirPath()+"/res/frame.png"));
-}
 
+//    QMovie movie(":/BackRes/res/d20_profit.gif");
+//    ui->gif_label->setMovie(&movie);
+//    movie.start();
+}
 void PlayerAnketa::loadDB()
 {
     QStringList list=(QStringList()<<"Male"<<"Female");
@@ -238,7 +238,7 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
      QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
      QPainter painter(&image);
      ui->centralWidget->render(&painter);
-     image.save(QString(QApplication::applicationDirPath()+"/res/Players/%1.png").arg(NameNum));
+     image.save(QString(QApplication::applicationDirPath()+"/res/Players/Anketa_%1.png").arg(NameNum));
      ++NameNum;
 }
 

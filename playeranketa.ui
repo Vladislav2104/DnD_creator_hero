@@ -30,9 +30,9 @@
    <widget class="QTextEdit" name="bio_textEdit">
     <property name="geometry">
      <rect>
-      <x>400</x>
+      <x>280</x>
       <y>370</y>
-      <width>271</width>
+      <width>401</width>
       <height>231</height>
      </rect>
     </property>
@@ -403,7 +403,7 @@ background-color: rgba(255, 255, 255, 0);</string>
      <rect>
       <x>10</x>
       <y>170</y>
-      <width>321</width>
+      <width>261</width>
       <height>321</height>
      </rect>
     </property>
@@ -1092,7 +1092,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="Stats_res_label">
      <property name="geometry">
       <rect>
-       <x>230</x>
+       <x>180</x>
        <y>4</y>
        <width>76</width>
        <height>20</height>
@@ -1118,7 +1118,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="Race_mod_label">
      <property name="geometry">
       <rect>
-       <x>125</x>
+       <x>90</x>
        <y>4</y>
        <width>66</width>
        <height>20</height>
@@ -1144,7 +1144,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_7">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>36</y>
        <width>16</width>
        <height>24</height>
@@ -1169,7 +1169,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_8">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>87</y>
        <width>16</width>
        <height>24</height>
@@ -1195,7 +1195,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_9">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>138</y>
        <width>16</width>
        <height>24</height>
@@ -1221,7 +1221,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_10">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>188</y>
        <width>16</width>
        <height>24</height>
@@ -1247,7 +1247,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_11">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>239</y>
        <width>16</width>
        <height>24</height>
@@ -1273,7 +1273,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="custom_label_12">
      <property name="geometry">
       <rect>
-       <x>214</x>
+       <x>170</x>
        <y>290</y>
        <width>16</width>
        <height>24</height>
@@ -1299,7 +1299,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="str_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>36</y>
        <width>60</width>
        <height>20</height>
@@ -1325,7 +1325,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="dex_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>87</y>
        <width>60</width>
        <height>20</height>
@@ -1351,7 +1351,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="int_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>188</y>
        <width>60</width>
        <height>20</height>
@@ -1377,7 +1377,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="con_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>138</y>
        <width>60</width>
        <height>20</height>
@@ -1403,7 +1403,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="wis_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>239</y>
        <width>60</width>
        <height>20</height>
@@ -1429,7 +1429,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="cha_stats_label">
      <property name="geometry">
       <rect>
-       <x>260</x>
+       <x>200</x>
        <y>290</y>
        <width>60</width>
        <height>20</height>
@@ -1455,7 +1455,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_con_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>139</y>
        <width>70</width>
        <height>20</height>
@@ -1481,7 +1481,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_str_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>39</y>
        <width>70</width>
        <height>20</height>
@@ -1507,7 +1507,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_dex_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>89</y>
        <width>70</width>
        <height>20</height>
@@ -1533,7 +1533,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_wis_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>243</y>
        <width>70</width>
        <height>20</height>
@@ -1559,7 +1559,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_int_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>192</y>
        <width>70</width>
        <height>20</height>
@@ -1585,7 +1585,7 @@ background-color: rgba(255, 255, 255, 0);</string>
     <widget class="QLabel" name="race_mod_cha_label">
      <property name="geometry">
       <rect>
-       <x>150</x>
+       <x>110</x>
        <y>294</y>
        <width>70</width>
        <height>20</height>
@@ -1612,8 +1612,8 @@ background-color: rgba(255, 255, 255, 0);</string>
    <widget class="QLabel" name="biograf_label">
     <property name="geometry">
      <rect>
-      <x>400</x>
-      <y>355</y>
+      <x>280</x>
+      <y>350</y>
       <width>47</width>
       <height>13</height>
      </rect>
@@ -1628,7 +1628,9 @@ background-color: rgba(255, 255, 255, 0);</string>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
+     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(255, 255, 255, 0);</string>
     </property>
     <property name="text">
      <string>Bio:</string>
@@ -1843,56 +1845,6 @@ background-color: rgb(255, 255, 255,0);</string>
      </property>
     </widget>
    </widget>
-   <widget class="QWidget" name="horizontalLayoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>500</x>
-      <y>610</y>
-      <width>171</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QPushButton" name="pushButton_saveAnket">
-       <property name="font">
-        <font>
-         <family>Bernard MT Condensed</family>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
-       </property>
-       <property name="text">
-        <string>SaveAnket</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="ExitPushButton">
-       <property name="font">
-        <font>
-         <family>Bernard MT Condensed</family>
-         <pointsize>12</pointsize>
-         <weight>50</weight>
-         <italic>false</italic>
-         <bold>false</bold>
-        </font>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
-       </property>
-       <property name="text">
-        <string>Exit</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
    <widget class="QGraphicsView" name="graphicsView_frame">
     <property name="geometry">
      <rect>
@@ -1953,6 +1905,72 @@ color: rgb(255, 255, 255);</string>
      </property>
     </widget>
    </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>610</y>
+      <width>211</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton_saveAnket">
+       <property name="font">
+        <font>
+         <family>Bernard MT Condensed</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
+       </property>
+       <property name="text">
+        <string>SaveAnket</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="ExitPushButton">
+       <property name="font">
+        <font>
+         <family>Bernard MT Condensed</family>
+         <pointsize>12</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Exit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="gif_label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>510</y>
+      <width>161</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: url(:/BackRes/res/d20profit.gif);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
    <zorder>graphicsView_background</zorder>
    <zorder>bio_textEdit</zorder>
    <zorder>BodyDategroupBox</zorder>
@@ -1964,6 +1982,11 @@ color: rgb(255, 255, 255);</string>
    <zorder>graphicsView_frame</zorder>
    <zorder>graphicsView_Avatar</zorder>
    <zorder>NamegroupBox</zorder>
+   <zorder>pushButton_saveAnket</zorder>
+   <zorder>ExitPushButton</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder></zorder>
+   <zorder>gif_label</zorder>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>

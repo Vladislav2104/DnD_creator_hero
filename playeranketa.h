@@ -16,6 +16,7 @@
 #include<QPixmap>
 #include<QWidget>
 #include<QDebug>
+#include<QMovie>
 #include<QLabel>
 #include<QImage>
 #include<QFile>

@@ -4,6 +4,8 @@
         <file>res/backg_taverna.png</file>
         <file>res/frame.png</file>
         <file>res/FontGot.ttf</file>
+        <file>res/d20profit.gif</file>
+        <file>res/d20lose.gif</file>
     </qresource>
     <qresource prefix="/Face_createRes">
         <file>res/male_base/f_base/1.png</file>

@@ -102,13 +102,14 @@ public:
     QComboBox *ClassesComboBox;
     QLabel *AlignmentLabel;
     QComboBox *AlignmentComboBox;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *pushButton_saveAnket;
-    QPushButton *ExitPushButton;
     QGraphicsView *graphicsView_frame;
     QGroupBox *NamegroupBox;
     QLineEdit *NameTextEdit;
+    QWidget *layoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *pushButton_saveAnket;
+    QPushButton *ExitPushButton;
+    QLabel *gif_label;
 
     void setupUi(QMainWindow *PlayerAnketa)
     {
@@ -123,7 +124,7 @@ public:
         graphicsView_Avatar->setStyleSheet(QStringLiteral("background-color: rgba(255, 255, 255, 0);"));
         bio_textEdit = new QTextEdit(centralWidget);
         bio_textEdit->setObjectName(QStringLiteral("bio_textEdit"));
-        bio_textEdit->setGeometry(QRect(400, 370, 271, 231));
+        bio_textEdit->setGeometry(QRect(280, 370, 401, 231));
         QFont font;
         font.setFamily(QStringLiteral("Bernard MT Condensed"));
         font.setPointSize(12);
@@ -226,7 +227,7 @@ public:
 
         StatsgroupBox = new QGroupBox(centralWidget);
         StatsgroupBox->setObjectName(QStringLiteral("StatsgroupBox"));
-        StatsgroupBox->setGeometry(QRect(10, 170, 321, 321));
+        StatsgroupBox->setGeometry(QRect(10, 170, 261, 321));
         QFont font1;
         font1.setFamily(QStringLiteral("Adobe Fangsong Std R"));
         font1.setPointSize(12);
@@ -372,128 +373,130 @@ public:
 "background-color: rgba(255, 255, 255, 0);"));
         Stats_res_label = new QLabel(StatsgroupBox);
         Stats_res_label->setObjectName(QStringLiteral("Stats_res_label"));
-        Stats_res_label->setGeometry(QRect(230, 4, 76, 20));
+        Stats_res_label->setGeometry(QRect(180, 4, 76, 20));
         Stats_res_label->setFont(font);
         Stats_res_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         Race_mod_label = new QLabel(StatsgroupBox);
         Race_mod_label->setObjectName(QStringLiteral("Race_mod_label"));
-        Race_mod_label->setGeometry(QRect(125, 4, 66, 20));
+        Race_mod_label->setGeometry(QRect(90, 4, 66, 20));
         Race_mod_label->setFont(font);
         Race_mod_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         custom_label_7 = new QLabel(StatsgroupBox);
         custom_label_7->setObjectName(QStringLiteral("custom_label_7"));
-        custom_label_7->setGeometry(QRect(214, 36, 16, 24));
+        custom_label_7->setGeometry(QRect(170, 36, 16, 24));
         custom_label_7->setFont(font);
         custom_label_7->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
         custom_label_8 = new QLabel(StatsgroupBox);
         custom_label_8->setObjectName(QStringLiteral("custom_label_8"));
-        custom_label_8->setGeometry(QRect(214, 87, 16, 24));
+        custom_label_8->setGeometry(QRect(170, 87, 16, 24));
         custom_label_8->setFont(font);
         custom_label_8->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         custom_label_9 = new QLabel(StatsgroupBox);
         custom_label_9->setObjectName(QStringLiteral("custom_label_9"));
-        custom_label_9->setGeometry(QRect(214, 138, 16, 24));
+        custom_label_9->setGeometry(QRect(170, 138, 16, 24));
         custom_label_9->setFont(font);
         custom_label_9->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         custom_label_10 = new QLabel(StatsgroupBox);
         custom_label_10->setObjectName(QStringLiteral("custom_label_10"));
-        custom_label_10->setGeometry(QRect(214, 188, 16, 24));
+        custom_label_10->setGeometry(QRect(170, 188, 16, 24));
         custom_label_10->setFont(font);
         custom_label_10->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         custom_label_11 = new QLabel(StatsgroupBox);
         custom_label_11->setObjectName(QStringLiteral("custom_label_11"));
-        custom_label_11->setGeometry(QRect(214, 239, 16, 24));
+        custom_label_11->setGeometry(QRect(170, 239, 16, 24));
         custom_label_11->setFont(font);
         custom_label_11->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         custom_label_12 = new QLabel(StatsgroupBox);
         custom_label_12->setObjectName(QStringLiteral("custom_label_12"));
-        custom_label_12->setGeometry(QRect(214, 290, 16, 24));
+        custom_label_12->setGeometry(QRect(170, 290, 16, 24));
         custom_label_12->setFont(font);
         custom_label_12->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         str_stats_label = new QLabel(StatsgroupBox);
         str_stats_label->setObjectName(QStringLiteral("str_stats_label"));
-        str_stats_label->setGeometry(QRect(260, 36, 60, 20));
+        str_stats_label->setGeometry(QRect(200, 36, 60, 20));
         str_stats_label->setFont(font);
         str_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         dex_stats_label = new QLabel(StatsgroupBox);
         dex_stats_label->setObjectName(QStringLiteral("dex_stats_label"));
-        dex_stats_label->setGeometry(QRect(260, 87, 60, 20));
+        dex_stats_label->setGeometry(QRect(200, 87, 60, 20));
         dex_stats_label->setFont(font);
         dex_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         int_stats_label = new QLabel(StatsgroupBox);
         int_stats_label->setObjectName(QStringLiteral("int_stats_label"));
-        int_stats_label->setGeometry(QRect(260, 188, 60, 20));
+        int_stats_label->setGeometry(QRect(200, 188, 60, 20));
         int_stats_label->setFont(font);
         int_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         con_stats_label = new QLabel(StatsgroupBox);
         con_stats_label->setObjectName(QStringLiteral("con_stats_label"));
-        con_stats_label->setGeometry(QRect(260, 138, 60, 20));
+        con_stats_label->setGeometry(QRect(200, 138, 60, 20));
         con_stats_label->setFont(font);
         con_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         wis_stats_label = new QLabel(StatsgroupBox);
         wis_stats_label->setObjectName(QStringLiteral("wis_stats_label"));
-        wis_stats_label->setGeometry(QRect(260, 239, 60, 20));
+        wis_stats_label->setGeometry(QRect(200, 239, 60, 20));
         wis_stats_label->setFont(font);
         wis_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         cha_stats_label = new QLabel(StatsgroupBox);
         cha_stats_label->setObjectName(QStringLiteral("cha_stats_label"));
-        cha_stats_label->setGeometry(QRect(260, 290, 60, 20));
+        cha_stats_label->setGeometry(QRect(200, 290, 60, 20));
         cha_stats_label->setFont(font);
         cha_stats_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_con_label = new QLabel(StatsgroupBox);
         race_mod_con_label->setObjectName(QStringLiteral("race_mod_con_label"));
-        race_mod_con_label->setGeometry(QRect(150, 139, 70, 20));
+        race_mod_con_label->setGeometry(QRect(110, 139, 70, 20));
         race_mod_con_label->setFont(font);
         race_mod_con_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_str_label = new QLabel(StatsgroupBox);
         race_mod_str_label->setObjectName(QStringLiteral("race_mod_str_label"));
-        race_mod_str_label->setGeometry(QRect(150, 39, 70, 20));
+        race_mod_str_label->setGeometry(QRect(110, 39, 70, 20));
         race_mod_str_label->setFont(font);
         race_mod_str_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_dex_label = new QLabel(StatsgroupBox);
         race_mod_dex_label->setObjectName(QStringLiteral("race_mod_dex_label"));
-        race_mod_dex_label->setGeometry(QRect(150, 89, 70, 20));
+        race_mod_dex_label->setGeometry(QRect(110, 89, 70, 20));
         race_mod_dex_label->setFont(font);
         race_mod_dex_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_wis_label = new QLabel(StatsgroupBox);
         race_mod_wis_label->setObjectName(QStringLiteral("race_mod_wis_label"));
-        race_mod_wis_label->setGeometry(QRect(150, 243, 70, 20));
+        race_mod_wis_label->setGeometry(QRect(110, 243, 70, 20));
         race_mod_wis_label->setFont(font);
         race_mod_wis_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_int_label = new QLabel(StatsgroupBox);
         race_mod_int_label->setObjectName(QStringLiteral("race_mod_int_label"));
-        race_mod_int_label->setGeometry(QRect(150, 192, 70, 20));
+        race_mod_int_label->setGeometry(QRect(110, 192, 70, 20));
         race_mod_int_label->setFont(font);
         race_mod_int_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         race_mod_cha_label = new QLabel(StatsgroupBox);
         race_mod_cha_label->setObjectName(QStringLiteral("race_mod_cha_label"));
-        race_mod_cha_label->setGeometry(QRect(150, 294, 70, 20));
+        race_mod_cha_label->setGeometry(QRect(110, 294, 70, 20));
         race_mod_cha_label->setFont(font);
         race_mod_cha_label->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "background-color: rgba(255, 255, 255, 0);"));
         biograf_label = new QLabel(centralWidget);
         biograf_label->setObjectName(QStringLiteral("biograf_label"));
-        biograf_label->setGeometry(QRect(400, 355, 47, 13));
+        biograf_label->setGeometry(QRect(280, 350, 47, 13));
         biograf_label->setFont(font);
-        biograf_label->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+        biograf_label->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 12pt \"Bernard MT Condensed\";\n"
+"background-color: rgba(255, 255, 255, 0);"));
         RaceClassAliggroupBox = new QGroupBox(centralWidget);
         RaceClassAliggroupBox->setObjectName(QStringLiteral("RaceClassAliggroupBox"));
         RaceClassAliggroupBox->setGeometry(QRect(10, 70, 240, 90));
@@ -543,28 +546,6 @@ public:
         AlignmentComboBox->setGeometry(QRect(120, 60, 100, 20));
         AlignmentComboBox->setFont(font);
         AlignmentComboBox->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
-        horizontalLayoutWidget = new QWidget(centralWidget);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(500, 610, 171, 31));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        pushButton_saveAnket = new QPushButton(horizontalLayoutWidget);
-        pushButton_saveAnket->setObjectName(QStringLiteral("pushButton_saveAnket"));
-        pushButton_saveAnket->setFont(font);
-        pushButton_saveAnket->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
-
-        horizontalLayout->addWidget(pushButton_saveAnket);
-
-        ExitPushButton = new QPushButton(horizontalLayoutWidget);
-        ExitPushButton->setObjectName(QStringLiteral("ExitPushButton"));
-        ExitPushButton->setFont(font);
-        ExitPushButton->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
-
-        horizontalLayout->addWidget(ExitPushButton);
-
         graphicsView_frame = new QGraphicsView(centralWidget);
         graphicsView_frame->setObjectName(QStringLiteral("graphicsView_frame"));
         graphicsView_frame->setGeometry(QRect(480, 20, 203, 293));
@@ -585,6 +566,32 @@ public:
         NameTextEdit->setGeometry(QRect(0, 20, 461, 21));
         NameTextEdit->setFont(font);
         NameTextEdit->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+        layoutWidget = new QWidget(centralWidget);
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
+        layoutWidget->setGeometry(QRect(470, 610, 211, 29));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
+        horizontalLayout->setSpacing(6);
+        horizontalLayout->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        pushButton_saveAnket = new QPushButton(layoutWidget);
+        pushButton_saveAnket->setObjectName(QStringLiteral("pushButton_saveAnket"));
+        pushButton_saveAnket->setFont(font);
+        pushButton_saveAnket->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+
+        horizontalLayout->addWidget(pushButton_saveAnket);
+
+        ExitPushButton = new QPushButton(layoutWidget);
+        ExitPushButton->setObjectName(QStringLiteral("ExitPushButton"));
+        ExitPushButton->setFont(font);
+        ExitPushButton->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+
+        horizontalLayout->addWidget(ExitPushButton);
+
+        gif_label = new QLabel(centralWidget);
+        gif_label->setObjectName(QStringLiteral("gif_label"));
+        gif_label->setGeometry(QRect(40, 510, 161, 121));
+        gif_label->setStyleSheet(QStringLiteral("image: url(:/BackRes/res/d20profit.gif);"));
         PlayerAnketa->setCentralWidget(centralWidget);
         graphicsView_background->raise();
         bio_textEdit->raise();
@@ -593,10 +600,13 @@ public:
         StatsgroupBox->raise();
         biograf_label->raise();
         RaceClassAliggroupBox->raise();
-        horizontalLayoutWidget->raise();
         graphicsView_frame->raise();
         graphicsView_Avatar->raise();
         NamegroupBox->raise();
+        pushButton_saveAnket->raise();
+        ExitPushButton->raise();
+        layoutWidget->raise();
+        gif_label->raise();
 
         retranslateUi(PlayerAnketa);
 
@@ -656,9 +666,10 @@ public:
         SubRaceLabel->setText(QApplication::translate("PlayerAnketa", "Subrace", Q_NULLPTR));
         ClassesLabel->setText(QApplication::translate("PlayerAnketa", "Classes", Q_NULLPTR));
         AlignmentLabel->setText(QApplication::translate("PlayerAnketa", "Alignment", Q_NULLPTR));
+        NamegroupBox->setTitle(QApplication::translate("PlayerAnketa", "Name", Q_NULLPTR));
         pushButton_saveAnket->setText(QApplication::translate("PlayerAnketa", "SaveAnket", Q_NULLPTR));
         ExitPushButton->setText(QApplication::translate("PlayerAnketa", "Exit", Q_NULLPTR));
-        NamegroupBox->setTitle(QApplication::translate("PlayerAnketa", "Name", Q_NULLPTR));
+        gif_label->setText(QString());
     } // retranslateUi
 
 };
