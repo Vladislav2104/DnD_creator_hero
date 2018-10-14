@@ -6,6 +6,7 @@
         <file>res/FontGot.ttf</file>
         <file>res/d20profit.gif</file>
         <file>res/d20lose.gif</file>
+        <file>res/DnD_ico.png</file>
     </qresource>
     <qresource prefix="/Face_createRes">
         <file>res/male_base/f_base/1.png</file>

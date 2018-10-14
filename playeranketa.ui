@@ -1869,15 +1869,18 @@ background-color: rgb(255, 255, 255,0);</string>
     </property>
     <property name="font">
      <font>
-      <family>Bodoni MT</family>
-      <pointsize>14</pointsize>
-      <weight>75</weight>
-      <bold>true</bold>
+      <family>Bernard MT Condensed</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgba(75, 75, 75, 150);
-color: rgb(255, 255, 255);</string>
+     <string notr="true">
+color: rgb(255, 255, 255);
+font: 12pt &quot;Bernard MT Condensed&quot;;
+background-color: rgba(75, 75, 75, 150);</string>
     </property>
     <property name="title">
      <string>Name</string>
@@ -1978,14 +1981,10 @@ color: rgb(255, 255, 255);</string>
    <zorder>StatsgroupBox</zorder>
    <zorder>biograf_label</zorder>
    <zorder>RaceClassAliggroupBox</zorder>
-   <zorder>horizontalLayoutWidget</zorder>
    <zorder>graphicsView_frame</zorder>
    <zorder>graphicsView_Avatar</zorder>
    <zorder>NamegroupBox</zorder>
-   <zorder>pushButton_saveAnket</zorder>
-   <zorder>ExitPushButton</zorder>
    <zorder>layoutWidget</zorder>
-   <zorder></zorder>
    <zorder>gif_label</zorder>
   </widget>
  </widget>

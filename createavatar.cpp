@@ -67,11 +67,19 @@ void CreateAvatar::on_HSlid4_valueChanged(int value)
 
 void CreateAvatar::on_pushButton_Save_clicked()
 {
-    QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
-    QPainter painter(&image);
-    face_create_scene->render(&painter);
-    image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
-    ++FaceNum;
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Saving avatar", "Finish creating an avatar?\n All created avatars are stored in the folder res/Avatars",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes)
+      {
+        QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
+        QPainter painter(&image);
+        face_create_scene->render(&painter);
+        image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
+        ++FaceNum;
+        this->close();
+      }
+      else{}
 }
 
 CreateAvatar::~CreateAvatar()

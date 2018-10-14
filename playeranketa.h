@@ -12,6 +12,7 @@
 #include<QComboBox>
 #include<QTextEdit>
 #include<QSpinBox>
+#include<QSettings>
 #include<QPainter>
 #include<QPixmap>
 #include<QWidget>
@@ -46,19 +47,25 @@ public:
     int result_stats;
     int NameNum = 0;
 
-    ~PlayerAnketa();
-
-private slots:
+    //int K;
 
     void loadDB();
 
     void PopUP_Tips();
 
+    void Result_label_update();
+
+//    void writeSet();
+
+//    void readSet();
+
+    ~PlayerAnketa();
+
+private slots:
+
     void on_RaceComboBox_currentIndexChanged(int index);
 
     void on_ClassesComboBox_currentIndexChanged(int index);
-
-    void Result_label_update();
 
     void on_Str_spinBox_valueChanged(int arg1);
 
@@ -82,6 +89,9 @@ private slots:
 
 private:
     Ui::PlayerAnketa *ui;
+
+    QSettings My_preset;
+    QString path = "E:\\Univer\\CMVP\\labs\\DnD_creator_hero";
 };
 
 #endif // PLAYERANKETA_H

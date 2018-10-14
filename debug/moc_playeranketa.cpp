@@ -19,8 +19,8 @@
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_PlayerAnketa_t {
-    QByteArrayData data[19];
-    char stringdata0[418];
+    QByteArrayData data[16];
+    char stringdata0[380];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -30,31 +30,27 @@ struct qt_meta_stringdata_PlayerAnketa_t {
 static const qt_meta_stringdata_PlayerAnketa_t qt_meta_stringdata_PlayerAnketa = {
     {
 QT_MOC_LITERAL(0, 0, 12), // "PlayerAnketa"
-QT_MOC_LITERAL(1, 13, 6), // "loadDB"
-QT_MOC_LITERAL(2, 20, 0), // ""
-QT_MOC_LITERAL(3, 21, 10), // "PopUP_Tips"
-QT_MOC_LITERAL(4, 32, 35), // "on_RaceComboBox_currentIndexC..."
-QT_MOC_LITERAL(5, 68, 5), // "index"
-QT_MOC_LITERAL(6, 74, 38), // "on_ClassesComboBox_currentInd..."
-QT_MOC_LITERAL(7, 113, 19), // "Result_label_update"
-QT_MOC_LITERAL(8, 133, 27), // "on_Str_spinBox_valueChanged"
-QT_MOC_LITERAL(9, 161, 4), // "arg1"
-QT_MOC_LITERAL(10, 166, 27), // "on_Cha_spinBox_valueChanged"
-QT_MOC_LITERAL(11, 194, 27), // "on_Dex_spinBox_valueChanged"
-QT_MOC_LITERAL(12, 222, 27), // "on_Con_spinBox_valueChanged"
-QT_MOC_LITERAL(13, 250, 27), // "on_Int_spinBox_valueChanged"
-QT_MOC_LITERAL(14, 278, 27), // "on_Wis_spinBox_valueChanged"
-QT_MOC_LITERAL(15, 306, 31), // "on_pushButton_saveAnket_clicked"
-QT_MOC_LITERAL(16, 338, 25), // "on_ExitPushButton_clicked"
-QT_MOC_LITERAL(17, 364, 27), // "on_CreatepushButton_clicked"
-QT_MOC_LITERAL(18, 392, 25) // "on_LoadpushButton_clicked"
+QT_MOC_LITERAL(1, 13, 35), // "on_RaceComboBox_currentIndexC..."
+QT_MOC_LITERAL(2, 49, 0), // ""
+QT_MOC_LITERAL(3, 50, 5), // "index"
+QT_MOC_LITERAL(4, 56, 38), // "on_ClassesComboBox_currentInd..."
+QT_MOC_LITERAL(5, 95, 27), // "on_Str_spinBox_valueChanged"
+QT_MOC_LITERAL(6, 123, 4), // "arg1"
+QT_MOC_LITERAL(7, 128, 27), // "on_Cha_spinBox_valueChanged"
+QT_MOC_LITERAL(8, 156, 27), // "on_Dex_spinBox_valueChanged"
+QT_MOC_LITERAL(9, 184, 27), // "on_Con_spinBox_valueChanged"
+QT_MOC_LITERAL(10, 212, 27), // "on_Int_spinBox_valueChanged"
+QT_MOC_LITERAL(11, 240, 27), // "on_Wis_spinBox_valueChanged"
+QT_MOC_LITERAL(12, 268, 31), // "on_pushButton_saveAnket_clicked"
+QT_MOC_LITERAL(13, 300, 25), // "on_ExitPushButton_clicked"
+QT_MOC_LITERAL(14, 326, 27), // "on_CreatepushButton_clicked"
+QT_MOC_LITERAL(15, 354, 25) // "on_LoadpushButton_clicked"
 
     },
-    "PlayerAnketa\0loadDB\0\0PopUP_Tips\0"
-    "on_RaceComboBox_currentIndexChanged\0"
-    "index\0on_ClassesComboBox_currentIndexChanged\0"
-    "Result_label_update\0on_Str_spinBox_valueChanged\0"
-    "arg1\0on_Cha_spinBox_valueChanged\0"
+    "PlayerAnketa\0on_RaceComboBox_currentIndexChanged\0"
+    "\0index\0on_ClassesComboBox_currentIndexChanged\0"
+    "on_Str_spinBox_valueChanged\0arg1\0"
+    "on_Cha_spinBox_valueChanged\0"
     "on_Dex_spinBox_valueChanged\0"
     "on_Con_spinBox_valueChanged\0"
     "on_Int_spinBox_valueChanged\0"
@@ -72,7 +68,7 @@ static const uint qt_meta_data_PlayerAnketa[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      15,   14, // methods
+      12,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -80,34 +76,28 @@ static const uint qt_meta_data_PlayerAnketa[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   89,    2, 0x08 /* Private */,
-       3,    0,   90,    2, 0x08 /* Private */,
-       4,    1,   91,    2, 0x08 /* Private */,
-       6,    1,   94,    2, 0x08 /* Private */,
-       7,    0,   97,    2, 0x08 /* Private */,
-       8,    1,   98,    2, 0x08 /* Private */,
-      10,    1,  101,    2, 0x08 /* Private */,
-      11,    1,  104,    2, 0x08 /* Private */,
-      12,    1,  107,    2, 0x08 /* Private */,
-      13,    1,  110,    2, 0x08 /* Private */,
-      14,    1,  113,    2, 0x08 /* Private */,
-      15,    0,  116,    2, 0x08 /* Private */,
-      16,    0,  117,    2, 0x08 /* Private */,
-      17,    0,  118,    2, 0x08 /* Private */,
-      18,    0,  119,    2, 0x08 /* Private */,
+       1,    1,   74,    2, 0x08 /* Private */,
+       4,    1,   77,    2, 0x08 /* Private */,
+       5,    1,   80,    2, 0x08 /* Private */,
+       7,    1,   83,    2, 0x08 /* Private */,
+       8,    1,   86,    2, 0x08 /* Private */,
+       9,    1,   89,    2, 0x08 /* Private */,
+      10,    1,   92,    2, 0x08 /* Private */,
+      11,    1,   95,    2, 0x08 /* Private */,
+      12,    0,   98,    2, 0x08 /* Private */,
+      13,    0,   99,    2, 0x08 /* Private */,
+      14,    0,  100,    2, 0x08 /* Private */,
+      15,    0,  101,    2, 0x08 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void, QMetaType::Int,    5,
-    QMetaType::Void,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Int,    9,
-    QMetaType::Void, QMetaType::Int,    9,
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    3,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
+    QMetaType::Void, QMetaType::Int,    6,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -122,21 +112,18 @@ void PlayerAnketa::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id
         PlayerAnketa *_t = static_cast<PlayerAnketa *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->loadDB(); break;
-        case 1: _t->PopUP_Tips(); break;
-        case 2: _t->on_RaceComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 3: _t->on_ClassesComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 4: _t->Result_label_update(); break;
-        case 5: _t->on_Str_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 6: _t->on_Cha_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 7: _t->on_Dex_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 8: _t->on_Con_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 9: _t->on_Int_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 10: _t->on_Wis_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
-        case 11: _t->on_pushButton_saveAnket_clicked(); break;
-        case 12: _t->on_ExitPushButton_clicked(); break;
-        case 13: _t->on_CreatepushButton_clicked(); break;
-        case 14: _t->on_LoadpushButton_clicked(); break;
+        case 0: _t->on_RaceComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 1: _t->on_ClassesComboBox_currentIndexChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 2: _t->on_Str_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 3: _t->on_Cha_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 4: _t->on_Dex_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 5: _t->on_Con_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 6: _t->on_Int_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 7: _t->on_Wis_spinBox_valueChanged((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 8: _t->on_pushButton_saveAnket_clicked(); break;
+        case 9: _t->on_ExitPushButton_clicked(); break;
+        case 10: _t->on_CreatepushButton_clicked(); break;
+        case 11: _t->on_LoadpushButton_clicked(); break;
         default: ;
         }
     }
@@ -167,13 +154,13 @@ int PlayerAnketa::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 15)
+        if (_id < 12)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 15;
+        _id -= 12;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 15)
+        if (_id < 12)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 15;
+        _id -= 12;
     }
     return _id;
 }

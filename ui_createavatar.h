@@ -75,7 +75,8 @@ public:
 
         SexComboBox = new QComboBox(layoutWidget);
         SexComboBox->setObjectName(QStringLiteral("SexComboBox"));
-        SexComboBox->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+        SexComboBox->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+""));
 
         verticalLayout->addWidget(SexComboBox);
 
@@ -159,7 +160,9 @@ public:
         pushButton_Save = new QPushButton(centralwidget);
         pushButton_Save->setObjectName(QStringLiteral("pushButton_Save"));
         pushButton_Save->setGeometry(QRect(20, 270, 151, 21));
-        pushButton_Save->setStyleSheet(QStringLiteral("font: 12pt \"Bernard MT Condensed\";"));
+        pushButton_Save->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(0, 0, 0);\n"
+""));
         graphicsView_frame = new QGraphicsView(centralwidget);
         graphicsView_frame->setObjectName(QStringLiteral("graphicsView_frame"));
         graphicsView_frame->setGeometry(QRect(190, 15, 203, 293));

@@ -7,13 +7,14 @@ PlayerAnketa::PlayerAnketa(QWidget *parent) :
     ui(new Ui::PlayerAnketa)
 {
     ui->setupUi(this);
+    //readSet();
     PopUP_Tips();
     setFixedSize(690,650);
     loadDB();
     avatar_load_scene = new QGraphicsScene;
     ui->graphicsView_Avatar->setScene(avatar_load_scene);
 
-//    QMovie movie(":/BackRes/res/d20_profit.gif");
+//    QMovie movie(":/BackRes/res/d20profit.gif");
 //    ui->gif_label->setMovie(&movie);
 //    movie.start();
 }
@@ -233,13 +234,35 @@ void PlayerAnketa::Result_label_update()
  ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
+//void PlayerAnketa::writeSet()
+//{
+//    My_preset.beginGroup("/Set");
+//    My_preset.value("/Count",K);
+//    My_preset.endGroup();
+//}
+
+//void PlayerAnketa::readSet()
+//{
+//    My_preset.beginGroup("/Set");
+//    K = My_preset.value("/Count",1).toInt();
+//    ++K;
+//    My_preset.endGroup();
+//}
+
 void PlayerAnketa::on_pushButton_saveAnket_clicked()
 {
-     QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
-     QPainter painter(&image);
-     ui->centralWidget->render(&painter);
-     image.save(QString(QApplication::applicationDirPath()+"/res/Players/Anketa_%1.png").arg(NameNum));
-     ++NameNum;
+    QMessageBox::StandardButton reply;
+      reply = QMessageBox::question(this, "Saving anket", "Finish creating an you hero?\n All created ankets are stored in the folder res/Players",
+                                    QMessageBox::Yes|QMessageBox::No);
+      if (reply == QMessageBox::Yes)
+      {
+        QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
+        QPainter painter(&image);
+        ui->centralWidget->render(&painter);
+        image.save(QString(QApplication::applicationDirPath()+"/res/Players/Anketa_%1.png").arg(NameNum));
+        ++NameNum;
+      }
+      else{}
 }
 
 void PlayerAnketa::on_CreatepushButton_clicked()
@@ -261,6 +284,7 @@ void PlayerAnketa::on_LoadpushButton_clicked()
 
 PlayerAnketa::~PlayerAnketa()
 {
+    //writeSet();
     model->clear();
     delete model;
     db.close();

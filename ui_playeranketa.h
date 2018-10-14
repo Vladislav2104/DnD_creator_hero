@@ -553,14 +553,11 @@ public:
         NamegroupBox = new QGroupBox(centralWidget);
         NamegroupBox->setObjectName(QStringLiteral("NamegroupBox"));
         NamegroupBox->setGeometry(QRect(10, 20, 461, 41));
-        QFont font2;
-        font2.setFamily(QStringLiteral("Bodoni MT"));
-        font2.setPointSize(14);
-        font2.setBold(true);
-        font2.setWeight(75);
-        NamegroupBox->setFont(font2);
-        NamegroupBox->setStyleSheet(QLatin1String("background-color: rgba(75, 75, 75, 150);\n"
-"color: rgb(255, 255, 255);"));
+        NamegroupBox->setFont(font);
+        NamegroupBox->setStyleSheet(QLatin1String("\n"
+"color: rgb(255, 255, 255);\n"
+"font: 12pt \"Bernard MT Condensed\";\n"
+"background-color: rgba(75, 75, 75, 150);"));
         NameTextEdit = new QLineEdit(NamegroupBox);
         NameTextEdit->setObjectName(QStringLiteral("NameTextEdit"));
         NameTextEdit->setGeometry(QRect(0, 20, 461, 21));
@@ -603,8 +600,6 @@ public:
         graphicsView_frame->raise();
         graphicsView_Avatar->raise();
         NamegroupBox->raise();
-        pushButton_saveAnket->raise();
-        ExitPushButton->raise();
         layoutWidget->raise();
         gif_label->raise();
 
