@@ -91,7 +91,6 @@ private slots:
 private:
     Ui::PlayerAnketa *ui;
     QMovie movie_profit;
-    QMovie movie_lose;
     QSettings My_preset;
     QString path = "E:\\Univer\\CMVP\\labs\\DnD_creator_hero";
 };

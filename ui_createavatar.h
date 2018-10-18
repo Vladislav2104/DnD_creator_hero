@@ -55,7 +55,7 @@ public:
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         layoutWidget = new QWidget(centralwidget);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 20, 161, 241));
+        layoutWidget->setGeometry(QRect(20, 20, 161, 261));
         verticalLayout = new QVBoxLayout(layoutWidget);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -159,7 +159,7 @@ public:
         graphicsView_backg->setStyleSheet(QStringLiteral("background-image: url(:/BackRes/res/backg_taverna.png);"));
         pushButton_Save = new QPushButton(centralwidget);
         pushButton_Save->setObjectName(QStringLiteral("pushButton_Save"));
-        pushButton_Save->setGeometry(QRect(20, 270, 151, 21));
+        pushButton_Save->setGeometry(QRect(20, 290, 151, 21));
         pushButton_Save->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
 "color: rgb(0, 0, 0);\n"
 ""));

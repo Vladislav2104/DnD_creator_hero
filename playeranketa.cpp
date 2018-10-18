@@ -38,6 +38,14 @@ void PlayerAnketa::loadDB()
 
 void PlayerAnketa::PopUP_Tips()
 {
+
+    ui->Str_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    ui->Dex_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    ui->Con_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    ui->Int_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    ui->Wis_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    ui->Cha_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+
     ui->Str_label->setToolTip("Strength - measures character's physical strength and endurance");
     ui->Dex_label->setToolTip("Dexterity - contains coordination, agility, reaction speed, reflexes and a sense of balance.");
     ui->Con_label->setToolTip("Constitution - includes stamina, training, health and physical resistance to damage.");
@@ -45,7 +53,9 @@ void PlayerAnketa::PopUP_Tips()
     ui->Wis_label->setToolTip("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
     ui->Cha_label->setToolTip("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
 
-
+//"{color: rgb(255, 115, 0);(font: 12pt "Bernard MT Condensed");}"
+//color: rgb(255, 115, 0);
+//background-color: rgba(255, 255, 255, 0);
 }
 
 void PlayerAnketa::Dice_role()
@@ -54,11 +64,6 @@ void PlayerAnketa::Dice_role()
     movie_profit.setScaledSize(QSize(190,140));
     ui->gif_label->setMovie(&movie_profit);
     movie_profit.start();
-
-//    movie_lose.setFileName(":/BackRes/res/d20lose.gif");
-//    movie_lose.setScaledSize(QSize(190,140));
-//    ui->gif_label_two->setMovie(&movie_lose);
-//    movie_lose.start();
 }
 
 void PlayerAnketa::on_Str_spinBox_valueChanged(int)
@@ -212,6 +217,8 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
 
 void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 {
+    ui->ClassesComboBox->setStyleSheet("QToolTip{font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+
     ui->Str_spinBox->setValue(rand()%17+1);
 
     ui->Dex_spinBox->setValue(rand()%17+1);
