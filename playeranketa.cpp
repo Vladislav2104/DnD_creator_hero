@@ -7,16 +7,14 @@ PlayerAnketa::PlayerAnketa(QWidget *parent) :
     ui(new Ui::PlayerAnketa)
 {
     ui->setupUi(this);
+    setFixedSize(690,650);
     //readSet();
     PopUP_Tips();
-    setFixedSize(690,650);
     loadDB();
+    Dice_role();
     avatar_load_scene = new QGraphicsScene;
     ui->graphicsView_Avatar->setScene(avatar_load_scene);
 
-//    QMovie movie(":/BackRes/res/d20profit.gif");
-//    ui->gif_label->setMovie(&movie);
-//    movie.start();
 }
 void PlayerAnketa::loadDB()
 {
@@ -46,6 +44,21 @@ void PlayerAnketa::PopUP_Tips()
     ui->Int_label->setToolTip("Intelligence - represents the character's memory, prudence, and ability to learn.");
     ui->Wis_label->setToolTip("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
     ui->Cha_label->setToolTip("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
+
+
+}
+
+void PlayerAnketa::Dice_role()
+{
+    movie_profit.setFileName(":/BackRes/res/d20profit.gif");
+    movie_profit.setScaledSize(QSize(190,140));
+    ui->gif_label->setMovie(&movie_profit);
+    movie_profit.start();
+
+//    movie_lose.setFileName(":/BackRes/res/d20lose.gif");
+//    movie_lose.setScaledSize(QSize(190,140));
+//    ui->gif_label_two->setMovie(&movie_lose);
+//    movie_lose.start();
 }
 
 void PlayerAnketa::on_Str_spinBox_valueChanged(int)
@@ -197,7 +210,7 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
     Result_label_update();
 }
 
-void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int)
+void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 {
     ui->Str_spinBox->setValue(rand()%17+1);
 
@@ -210,6 +223,43 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int)
     ui->Wis_spinBox->setValue(rand()%17+1);
 
     ui->Cha_spinBox->setValue(rand()%17+1);
+
+    switch(index)
+    {
+    case 0:
+         ui->ClassesComboBox->setToolTip("Assassin - ");
+
+        break;
+    case 1:
+        ui->ClassesComboBox->setToolTip("Barbarian - ");
+
+        break;
+    case 2:
+        ui->ClassesComboBox->setToolTip("Clerik - ");
+
+        break;
+    case 3:
+        ui->ClassesComboBox->setToolTip("Knight - ");
+        break;
+    case 4:
+         ui->ClassesComboBox->setToolTip("Rouge - ");
+
+        break;
+    case 5:
+        ui->ClassesComboBox->setToolTip("Paladin - ");
+
+        break;
+    case 6:
+        ui->ClassesComboBox->setToolTip("Wizard - ");
+
+        break;
+    case 7:
+        ui->ClassesComboBox->setToolTip("Druid - ");
+        break;
+    case 8:
+        ui->ClassesComboBox->setToolTip("Thief - ");
+        break;
+    }
 }
 
 void PlayerAnketa::Result_label_update()
@@ -252,17 +302,23 @@ void PlayerAnketa::Result_label_update()
 void PlayerAnketa::on_pushButton_saveAnket_clicked()
 {
     QMessageBox::StandardButton reply;
-      reply = QMessageBox::question(this, "Saving anket", "Finish creating an you hero?\n All created ankets are stored in the folder res/Players",
-                                    QMessageBox::Yes|QMessageBox::No);
-      if (reply == QMessageBox::Yes)
-      {
-        QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
-        QPainter painter(&image);
-        ui->centralWidget->render(&painter);
-        image.save(QString(QApplication::applicationDirPath()+"/res/Players/Anketa_%1.png").arg(NameNum));
-        ++NameNum;
-      }
-      else{}
+    reply = QMessageBox::question(this, "Saving anket", "Finish creating an you hero?\n",
+                                  QMessageBox::Yes|QMessageBox::No);
+    if (reply == QMessageBox::Yes)
+    {
+        QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), "",
+                                                        tr("PNG Files (*.png);;JPG Files (*.jpg)"));
+        if (fileName != "")
+        {
+            QFile file(fileName);
+            QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
+            QPainter painter(&image);
+            ui->centralWidget->render(&painter);
+            image.save(fileName);
+            ++NameNum;
+        }
+        else {}
+    }
 }
 
 void PlayerAnketa::on_CreatepushButton_clicked()
@@ -273,6 +329,7 @@ void PlayerAnketa::on_CreatepushButton_clicked()
 
 void PlayerAnketa::on_LoadpushButton_clicked()
 {
+    avatar_load_scene->clear();
     QString fileName = QFileDialog::getOpenFileName(this,"Open Image File",QDir::currentPath());
 
      if(!fileName.isEmpty())

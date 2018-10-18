@@ -46,12 +46,13 @@ public:
     int race_buff_cha;
     int result_stats;
     int NameNum = 0;
-
     //int K;
 
     void loadDB();
 
     void PopUP_Tips();
+
+    void Dice_role();
 
     void Result_label_update();
 
@@ -89,7 +90,8 @@ private slots:
 
 private:
     Ui::PlayerAnketa *ui;
-
+    QMovie movie_profit;
+    QMovie movie_lose;
     QSettings My_preset;
     QString path = "E:\\Univer\\CMVP\\labs\\DnD_creator_hero";
 };

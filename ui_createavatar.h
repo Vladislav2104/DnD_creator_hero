@@ -197,7 +197,7 @@ public:
         race_label->setText(QApplication::translate("CreateAvatar", "Race", Q_NULLPTR));
         hair_label->setText(QApplication::translate("CreateAvatar", "Hair", Q_NULLPTR));
         eyes_label->setText(QApplication::translate("CreateAvatar", "Eyes", Q_NULLPTR));
-        rot_label->setText(QApplication::translate("CreateAvatar", "Rot", Q_NULLPTR));
+        rot_label->setText(QApplication::translate("CreateAvatar", "Mouth", Q_NULLPTR));
         pushButton_Save->setText(QApplication::translate("CreateAvatar", "Save", Q_NULLPTR));
     } // retranslateUi
 

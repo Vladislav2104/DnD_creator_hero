@@ -7,7 +7,7 @@ CreateAvatar::CreateAvatar(QWidget *parent) :
 {
     ui->setupUi(this);
     setFixedSize(411,370);
-    QStringList list=(QStringList()<<"Male"<<"Female");
+    QStringList list=(QStringList()<<"Heavy"<<"Light");
     ui->SexComboBox->addItems(list);
 
     integerVector.resize(4);
