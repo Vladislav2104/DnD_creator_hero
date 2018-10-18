@@ -1,10 +1,6 @@
-# if defined(UNDER_CE)
-#  include <winbase.h>
-# else
-#  include <windows.h>
-# endif
+#include <windows.h>
 
-IDI_ICON1	ICON	DISCARDABLE	"E:\\Univer\\CMVP\\labs\\DnD_creator_hero\\DnD_cr.ico"
+IDI_ICON1	ICON	DISCARDABLE	"C:\\Users\\MA-PC\\Desktop\\Univer\\CMVP_CW\\DnD_creator_hero\\DnD_cr.ico"
 
 VS_VERSION_INFO VERSIONINFO
 	FILEVERSION 0,0,0,0
