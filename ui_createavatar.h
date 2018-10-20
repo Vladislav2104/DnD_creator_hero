@@ -45,6 +45,7 @@ public:
     QPushButton *pushButton_Save;
     QGraphicsView *graphicsView_frame;
     QGraphicsView *graphicsView;
+    QPushButton *pushButton_Cancel;
 
     void setupUi(QMainWindow *CreateAvatar)
     {
@@ -159,10 +160,9 @@ public:
         graphicsView_backg->setStyleSheet(QStringLiteral("background-image: url(:/BackRes/res/backg_taverna.png);"));
         pushButton_Save = new QPushButton(centralwidget);
         pushButton_Save->setObjectName(QStringLiteral("pushButton_Save"));
-        pushButton_Save->setGeometry(QRect(20, 290, 151, 21));
+        pushButton_Save->setGeometry(QRect(20, 290, 150, 21));
         pushButton_Save->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
-"color: rgb(0, 0, 0);\n"
-""));
+"color: rgb(0, 0, 0);"));
         graphicsView_frame = new QGraphicsView(centralwidget);
         graphicsView_frame->setObjectName(QStringLiteral("graphicsView_frame"));
         graphicsView_frame->setGeometry(QRect(190, 15, 203, 293));
@@ -178,12 +178,18 @@ public:
         QBrush brush1(QColor(0, 0, 0, 255));
         brush1.setStyle(Qt::NoBrush);
         graphicsView->setForegroundBrush(brush1);
+        pushButton_Cancel = new QPushButton(centralwidget);
+        pushButton_Cancel->setObjectName(QStringLiteral("pushButton_Cancel"));
+        pushButton_Cancel->setGeometry(QRect(20, 320, 150, 21));
+        pushButton_Cancel->setStyleSheet(QLatin1String("font: 12pt \"Bernard MT Condensed\";\n"
+"color: rgb(0, 0, 0);"));
         CreateAvatar->setCentralWidget(centralwidget);
         graphicsView_backg->raise();
         layoutWidget->raise();
         pushButton_Save->raise();
         graphicsView_frame->raise();
         graphicsView->raise();
+        pushButton_Cancel->raise();
 
         retranslateUi(CreateAvatar);
 
@@ -199,6 +205,7 @@ public:
         eyes_label->setText(QApplication::translate("CreateAvatar", "Eyes", Q_NULLPTR));
         rot_label->setText(QApplication::translate("CreateAvatar", "Mouth", Q_NULLPTR));
         pushButton_Save->setText(QApplication::translate("CreateAvatar", "Save", Q_NULLPTR));
+        pushButton_Cancel->setText(QApplication::translate("CreateAvatar", "Cancel", Q_NULLPTR));
     } // retranslateUi
 
 };

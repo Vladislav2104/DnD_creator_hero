@@ -52,10 +52,6 @@ void PlayerAnketa::PopUP_Tips()
     ui->Int_label->setToolTip("Intelligence - represents the character's memory, prudence, and ability to learn.");
     ui->Wis_label->setToolTip("Wisdom - combines awareness, prudence, cunning, willpower, and intuition.");
     ui->Cha_label->setToolTip("Charisma - measures the character's persuasiveness, attractiveness, and leadership.");
-
-//"{color: rgb(255, 115, 0);(font: 12pt "Bernard MT Condensed");}"
-//color: rgb(255, 115, 0);
-//background-color: rgba(255, 255, 255, 0);
 }
 
 void PlayerAnketa::Dice_role()
@@ -291,43 +287,47 @@ void PlayerAnketa::Result_label_update()
  ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
-//void PlayerAnketa::writeSet()
-//{
-//    My_preset.beginGroup("/Set");
-//    My_preset.value("/Count",K);
-//    My_preset.endGroup();
-//}
-
-//void PlayerAnketa::readSet()
-//{
-//    My_preset.beginGroup("/Set");
-//    K = My_preset.value("/Count",1).toInt();
-//    ++K;
-//    My_preset.endGroup();
-//}
-
 void PlayerAnketa::on_pushButton_saveAnket_clicked()
 {
-    QMessageBox::StandardButton reply;
-    reply = QMessageBox::question(this, "Saving anket", "Finish creating an you hero?\n",
-                                  QMessageBox::Yes|QMessageBox::No);
-    if (reply == QMessageBox::Yes)
+    if (ui->NameTextEdit->text() == "" || avatar_load_scene->items().empty())
     {
-        QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), "",
-                                                        tr("PNG Files (*.png);;JPG Files (*.jpg)"));
-        if (fileName != "")
+        QMessageBox TrueInputMsgBox;
+        TrueInputMsgBox.setWindowTitle("Data entry error");
+        TrueInputMsgBox.setStyleSheet("QMessageBox {font: 12pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
+        TrueInputMsgBox.setText("Fill in the Name field and select your character's Avatar.");
+        QPushButton *OKButton = TrueInputMsgBox.addButton(QMessageBox::Ok);
+        OKButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        TrueInputMsgBox.exec();
+
+    }
+    else
+    {
+        QMessageBox SaveQstnMsgBox;
+        SaveQstnMsgBox.setWindowTitle("Saving anket");
+        SaveQstnMsgBox.setText("Finish creating an you hero?");
+        SaveQstnMsgBox.setStyleSheet("QMessageBox {font: 12pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
+        QPushButton *YESButton = SaveQstnMsgBox.addButton(QMessageBox::Yes);
+        YESButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        QPushButton *NOButton = SaveQstnMsgBox.addButton(QMessageBox::No);
+        NOButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        SaveQstnMsgBox.exec();
+
+        if (YESButton)
         {
-            QFile file(fileName);
-            QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
-            QPainter painter(&image);
-            ui->centralWidget->render(&painter);
-            image.save(fileName);
-            ++NameNum;
+            QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), "",
+                                                            tr("PNG Files (*.png);;JPG Files (*.jpg)"));
+            if (fileName != "")
+            {
+                QFile file(fileName);
+                QImage image(ui->centralWidget->width(),ui->centralWidget->height(), QImage::Format_ARGB32_Premultiplied);
+                QPainter painter(&image);
+                ui->centralWidget->render(&painter);
+                image.save(fileName);
+            }
+            else {}
         }
-        else {}
     }
 }
-
 void PlayerAnketa::on_CreatepushButton_clicked()
 {
     CreateAvatar *CrtAvt  = new CreateAvatar();
@@ -348,7 +348,6 @@ void PlayerAnketa::on_LoadpushButton_clicked()
 
 PlayerAnketa::~PlayerAnketa()
 {
-    //writeSet();
     model->clear();
     delete model;
     db.close();

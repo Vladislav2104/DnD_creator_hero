@@ -67,22 +67,49 @@ void CreateAvatar::on_HSlid4_valueChanged(int value)
 
 void CreateAvatar::on_pushButton_Save_clicked()
 {
-    QMessageBox::StandardButton reply;
-      reply = QMessageBox::question(this, "Saving avatar", "Finish creating an avatar?\n All created avatars are stored in the folder res/Avatars",
-                                    QMessageBox::Yes|QMessageBox::No);
-      if (reply == QMessageBox::Yes)
-      {
-        QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
-        QPainter painter(&image);
-        face_create_scene->render(&painter);
-        image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
-        ++FaceNum;
-        this->close();
-      }
-      else{}
+    if (face_create_scene->items().empty())
+    {
+        QMessageBox TrueInputMsgBox;
+        TrueInputMsgBox.setWindowTitle("Data entry error");
+        TrueInputMsgBox.setStyleSheet("QMessageBox {font: 14pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
+        TrueInputMsgBox.setText("Customize your avatar or click CANCEL .");
+        QPushButton *OKButton = TrueInputMsgBox.addButton(QMessageBox::Ok);
+        OKButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        TrueInputMsgBox.exec();
+
+    }
+    else
+    {
+        QMessageBox SaveQstnMsgBox;
+        SaveQstnMsgBox.setWindowTitle("Saving avatar");
+        SaveQstnMsgBox.setText("Finish creating an avatar?\n All created avatars are stored in the folder res/Avatars");
+        SaveQstnMsgBox.setStyleSheet("QMessageBox {font: 12pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
+        QPushButton *YESButton = SaveQstnMsgBox.addButton(QMessageBox::Yes);
+        YESButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        QPushButton *NOButton = SaveQstnMsgBox.addButton(QMessageBox::No);
+        NOButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        SaveQstnMsgBox.exec();
+
+        if (YESButton)
+        {
+            QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
+            QPainter painter(&image);
+            face_create_scene->render(&painter);
+            image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
+            ++FaceNum;
+            this->close();
+         }
+            else {}
+        }
+}
+void CreateAvatar::on_pushButton_Cancel_clicked()
+{
+    this->close();
 }
 
 CreateAvatar::~CreateAvatar()
 {
     delete ui;
 }
+
+
