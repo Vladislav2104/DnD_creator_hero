@@ -2344,7 +2344,7 @@ color: rgb(255, 255, 255);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/BackRes/res/d20profit.gif);</string>
+     <string notr="true"/>
     </property>
     <property name="text">
      <string/>

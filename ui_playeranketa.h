@@ -644,7 +644,7 @@ public:
         gif_label = new QLabel(centralWidget);
         gif_label->setObjectName(QStringLiteral("gif_label"));
         gif_label->setGeometry(QRect(40, 500, 190, 140));
-        gif_label->setStyleSheet(QStringLiteral("image: url(:/BackRes/res/d20profit.gif);"));
+        gif_label->setStyleSheet(QStringLiteral(""));
         PlayerAnketa->setCentralWidget(centralWidget);
         graphicsView_background->raise();
         bio_textEdit->raise();

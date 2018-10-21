@@ -55,19 +55,19 @@ void CreateAvatar::on_HSlid1_valueChanged(int value)
 void CreateAvatar::on_HSlid3_valueChanged(int value)
 {
     integerVector[2] = value;
-        update();
+    update();
 }
 
 
 void CreateAvatar::on_HSlid4_valueChanged(int value)
 {
     integerVector[3] = value;
-        update();
+    update();
 }
 
 void CreateAvatar::on_pushButton_Save_clicked()
 {
-    if (face_create_scene->items().empty())
+    if (face_create_scene->items().empty()||ui->HSlid->value()==0||ui->HSlid1->value()==0||ui->HSlid3->value()==0||ui->HSlid4->value()==0)
     {
         QMessageBox TrueInputMsgBox;
         TrueInputMsgBox.setWindowTitle("Data entry error");
@@ -90,17 +90,23 @@ void CreateAvatar::on_pushButton_Save_clicked()
         NOButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
         SaveQstnMsgBox.exec();
 
-        if (YESButton)
+        if (SaveQstnMsgBox.clickedButton()==YESButton)
         {
             QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
             QPainter painter(&image);
             face_create_scene->render(&painter);
             image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
             ++FaceNum;
-            this->close();
-         }
-            else {}
         }
+        else
+        {
+            if (SaveQstnMsgBox.clickedButton()==NOButton)
+            {
+                SaveQstnMsgBox.close();
+            }
+
+        }
+    }
 }
 void CreateAvatar::on_pushButton_Cancel_clicked()
 {

@@ -230,7 +230,7 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
     switch(index)
     {
     case 0:
-         ui->ClassesComboBox->setToolTip("Assassin - ");
+        ui->ClassesComboBox->setToolTip("Assassin - ");
 
         break;
     case 1:
@@ -245,7 +245,7 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
         ui->ClassesComboBox->setToolTip("Knight - ");
         break;
     case 4:
-         ui->ClassesComboBox->setToolTip("Rouge - ");
+        ui->ClassesComboBox->setToolTip("Rouge - ");
 
         break;
     case 5:
@@ -268,23 +268,23 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 void PlayerAnketa::Result_label_update()
 {
 
- result_stats = race_buff_str + ui->Str_spinBox->value();
- ui->str_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_str + ui->Str_spinBox->value();
+    ui->str_stats_label->setText(QString::number(result_stats));
 
- result_stats = race_buff_dex + ui->Dex_spinBox->value();
- ui->dex_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_dex + ui->Dex_spinBox->value();
+    ui->dex_stats_label->setText(QString::number(result_stats));
 
- result_stats = race_buff_con + ui->Con_spinBox->value();
- ui->con_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_con + ui->Con_spinBox->value();
+    ui->con_stats_label->setText(QString::number(result_stats));
 
- result_stats = race_buff_int + ui->Int_spinBox->value();
- ui->int_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_int + ui->Int_spinBox->value();
+    ui->int_stats_label->setText(QString::number(result_stats));
 
- result_stats = race_buff_wis + ui->Wis_spinBox->value();
- ui->wis_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_wis + ui->Wis_spinBox->value();
+    ui->wis_stats_label->setText(QString::number(result_stats));
 
- result_stats = race_buff_cha + ui->Cha_spinBox->value();
- ui->cha_stats_label->setText(QString::number(result_stats));
+    result_stats = race_buff_cha + ui->Cha_spinBox->value();
+    ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
 void PlayerAnketa::on_pushButton_saveAnket_clicked()
@@ -312,7 +312,7 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
         NOButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
         SaveQstnMsgBox.exec();
 
-        if (YESButton)
+        if (SaveQstnMsgBox.clickedButton()==YESButton)
         {
             QString fileName = QFileDialog::getSaveFileName(this, tr("Save File"), "",
                                                             tr("PNG Files (*.png);;JPG Files (*.jpg)"));
@@ -324,7 +324,14 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
                 ui->centralWidget->render(&painter);
                 image.save(fileName);
             }
-            else {}
+            else
+            {
+                if (SaveQstnMsgBox.clickedButton()==NOButton)
+                {
+                    SaveQstnMsgBox.close();
+                }
+
+            }
         }
     }
 }
@@ -339,11 +346,11 @@ void PlayerAnketa::on_LoadpushButton_clicked()
     avatar_load_scene->clear();
     QString fileName = QFileDialog::getOpenFileName(this,"Open Image File",QDir::currentPath());
 
-     if(!fileName.isEmpty())
-     {
-         avatar_load_scene->addPixmap(QPixmap(fileName).scaled(157,257));
-         ui->graphicsView_Avatar->setScene(avatar_load_scene);
-     }
+    if(!fileName.isEmpty())
+    {
+        avatar_load_scene->addPixmap(QPixmap(fileName).scaled(157,257));
+        ui->graphicsView_Avatar->setScene(avatar_load_scene);
+    }
 }
 
 PlayerAnketa::~PlayerAnketa()
