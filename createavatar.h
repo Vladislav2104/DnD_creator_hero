@@ -22,6 +22,7 @@
 #include <QAbstractSlider>
 #include <QApplication>
 #include <QVector>
+#include<playeranketa.h>
 
 
 namespace Ui {

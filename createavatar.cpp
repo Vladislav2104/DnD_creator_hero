@@ -1,6 +1,7 @@
 #include "createavatar.h"
 #include "ui_createavatar.h"
 
+
 CreateAvatar::CreateAvatar(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::CreateAvatar)
@@ -95,8 +96,13 @@ void CreateAvatar::on_pushButton_Save_clicked()
             QImage image(face_create_scene->width(), face_create_scene->height(), QImage::Format_ARGB32_Premultiplied);
             QPainter painter(&image);
             face_create_scene->render(&painter);
-            image.save(QString(QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
+            QString saveAvatarName((QApplication::applicationDirPath()+"/res/Avatars/Avatar_%1.png").arg(FaceNum));
+
+            image.save(saveAvatarName);
+
             ++FaceNum;
+           ((PlayerAnketa*)parent())->LoadAvatars(saveAvatarName);
+            this->close();
         }
         else
         {

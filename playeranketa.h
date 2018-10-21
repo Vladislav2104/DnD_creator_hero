@@ -59,6 +59,7 @@ public:
 //    void writeSet();
 
 //    void readSet();
+    void LoadAvatars(QString fileName);
 
     ~PlayerAnketa();
 

@@ -213,7 +213,9 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
 
 void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 {
-    ui->ClassesComboBox->setStyleSheet("QToolTip{font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+    //ui->ClassesComboBox->setStyleSheet("QToolTip{ min-height:100pt; font: 10pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
+
+    ui->ClassesComboBox->setStyleSheet("QToolTip{font: 12pt Bernard MT Condensed;  background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:0px solid rgb(125,125,125); }");
 
     ui->Str_spinBox->setValue(rand()%17+1);
 
@@ -287,6 +289,15 @@ void PlayerAnketa::Result_label_update()
     ui->cha_stats_label->setText(QString::number(result_stats));
 }
 
+void PlayerAnketa::LoadAvatars(QString fileName)
+{
+    if(!fileName.isEmpty())
+    {
+        avatar_load_scene->addPixmap(QPixmap(fileName).scaled(157,257));
+        ui->graphicsView_Avatar->setScene(avatar_load_scene);
+    }
+}
+
 void PlayerAnketa::on_pushButton_saveAnket_clicked()
 {
     if (ui->NameTextEdit->text() == "" || avatar_load_scene->items().empty())
@@ -337,7 +348,7 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
 }
 void PlayerAnketa::on_CreatepushButton_clicked()
 {
-    CreateAvatar *CrtAvt  = new CreateAvatar();
+    CreateAvatar *CrtAvt  = new CreateAvatar(this);
     CrtAvt->show();
 }
 
@@ -346,11 +357,7 @@ void PlayerAnketa::on_LoadpushButton_clicked()
     avatar_load_scene->clear();
     QString fileName = QFileDialog::getOpenFileName(this,"Open Image File",QDir::currentPath());
 
-    if(!fileName.isEmpty())
-    {
-        avatar_load_scene->addPixmap(QPixmap(fileName).scaled(157,257));
-        ui->graphicsView_Avatar->setScene(avatar_load_scene);
-    }
+     LoadAvatars(fileName);
 }
 
 PlayerAnketa::~PlayerAnketa()
