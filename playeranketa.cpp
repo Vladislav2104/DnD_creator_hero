@@ -213,9 +213,8 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
 
 void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 {
-    //ui->ClassesComboBox->setStyleSheet("QToolTip{ min-height:100pt; font: 10pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
 
-    ui->ClassesComboBox->setStyleSheet("QToolTip{font: 12pt Bernard MT Condensed;  background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:0px solid rgb(125,125,125); }");
+    ui->ClassesComboBox->setStyleSheet("QToolTip{font: 10pt Bernard MT Condensed;  background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:0px solid rgb(125,125,125); }");
 
     ui->Str_spinBox->setValue(rand()%17+1);
 
@@ -232,37 +231,37 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
     switch(index)
     {
     case 0:
-        ui->ClassesComboBox->setToolTip("Assassin - ");
+        ui->ClassesComboBox->setToolTip("Assassin - killer class specializing in covert moving and murder.");
 
         break;
     case 1:
-        ui->ClassesComboBox->setToolTip("Barbarian - ");
+        ui->ClassesComboBox->setToolTip("Barbarian - a wild warrior who wants to destroy enemies with his ax.");
 
         break;
     case 2:
-        ui->ClassesComboBox->setToolTip("Clerik - ");
+        ui->ClassesComboBox->setToolTip("Cleric - priest who saves the allies with the word of God and strengthens them with prayers.");
 
         break;
     case 3:
-        ui->ClassesComboBox->setToolTip("Knight - ");
+        ui->ClassesComboBox->setToolTip("Knight - fighter clad in heavy armor cutting through the enemy's shield with a shield and sword.");
         break;
     case 4:
-        ui->ClassesComboBox->setToolTip("Rouge - ");
+        ui->ClassesComboBox->setToolTip("Rouge - a clever oruduschy daggers obmanschink, who does not love an open battle.");
 
         break;
     case 5:
-        ui->ClassesComboBox->setToolTip("Paladin - ");
+        ui->ClassesComboBox->setToolTip("Paladin - the sacred knight who wants to destroy the infidels and who consider himself the sword of God.");
 
         break;
     case 6:
-        ui->ClassesComboBox->setToolTip("Wizard - ");
+        ui->ClassesComboBox->setToolTip("Wizard - unleashes the wrath of the enemies or the mercy of magic.");
 
         break;
     case 7:
-        ui->ClassesComboBox->setToolTip("Druid - ");
+        ui->ClassesComboBox->setToolTip("Druid - magician who understands nature and is ready to defend it in the form of a ferocious beast.");
         break;
     case 8:
-        ui->ClassesComboBox->setToolTip("Thief - ");
+        ui->ClassesComboBox->setToolTip("Thief - specialist in penetration and escapes; he does not like to kill, but he loves money.");
         break;
     }
 }

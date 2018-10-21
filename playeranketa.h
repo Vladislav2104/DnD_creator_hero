@@ -56,9 +56,6 @@ public:
 
     void Result_label_update();
 
-//    void writeSet();
-
-//    void readSet();
     void LoadAvatars(QString fileName);
 
     ~PlayerAnketa();
