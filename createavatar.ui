@@ -120,7 +120,7 @@ color: rgb(255, 255, 255);</string>
         <string notr="true">font: 12pt &quot;Bernard MT Condensed&quot;;</string>
        </property>
        <property name="maximum">
-        <number>5</number>
+        <number>4</number>
        </property>
        <property name="pageStep">
         <number>1</number>

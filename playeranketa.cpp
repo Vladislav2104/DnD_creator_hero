@@ -8,7 +8,6 @@ PlayerAnketa::PlayerAnketa(QWidget *parent) :
 {
     ui->setupUi(this);
     setFixedSize(690,650);
-    //readSet();
     PopUP_Tips();
     loadDB();
     Dice_role();
@@ -38,7 +37,6 @@ void PlayerAnketa::loadDB()
 
 void PlayerAnketa::PopUP_Tips()
 {
-
     ui->Str_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
     ui->Dex_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
     ui->Con_label->setStyleSheet("QToolTip{ font: 12pt Bernard MT Condensed; background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:2px solid rgb(125,125,125); padding: 1px; border-radius: 2px;}");
@@ -213,7 +211,6 @@ void PlayerAnketa::on_RaceComboBox_currentIndexChanged(int index)
 
 void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 {
-
     ui->ClassesComboBox->setStyleSheet("QToolTip{font: 10pt Bernard MT Condensed;  background-color:rgba(75, 75, 75, 200); color:rgb(255, 115, 0); border:0px solid rgb(125,125,125); }");
 
     ui->Str_spinBox->setValue(rand()%17+1);
@@ -268,7 +265,6 @@ void PlayerAnketa::on_ClassesComboBox_currentIndexChanged(int index)
 
 void PlayerAnketa::Result_label_update()
 {
-
     result_stats = race_buff_str + ui->Str_spinBox->value();
     ui->str_stats_label->setText(QString::number(result_stats));
 
@@ -303,10 +299,10 @@ void PlayerAnketa::on_pushButton_saveAnket_clicked()
     {
         QMessageBox TrueInputMsgBox;
         TrueInputMsgBox.setWindowTitle("Data entry error");
-        TrueInputMsgBox.setStyleSheet("QMessageBox {font: 12pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
+        TrueInputMsgBox.setStyleSheet("QMessageBox {font: 16pt Bernard MT Condensed; background-color:rgb(255, 115, 0);}");
         TrueInputMsgBox.setText("Fill in the Name field and select your character's Avatar.");
         QPushButton *OKButton = TrueInputMsgBox.addButton(QMessageBox::Ok);
-        OKButton->setStyleSheet("QPushButton {font: 14pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
+        OKButton->setStyleSheet("QPushButton {font: 16pt Bernard MT Condensed; background-color:rgba(0, 0, 0, 255); color:rgb(255, 115, 0);}");
         TrueInputMsgBox.exec();
 
     }

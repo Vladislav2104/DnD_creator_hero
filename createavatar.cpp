@@ -68,7 +68,7 @@ void CreateAvatar::on_HSlid4_valueChanged(int value)
 
 void CreateAvatar::on_pushButton_Save_clicked()
 {
-    if (face_create_scene->items().empty()||ui->HSlid->value()==0||ui->HSlid1->value()==0||ui->HSlid3->value()==0||ui->HSlid4->value()==0)
+    if (face_create_scene->items().empty()||ui->HSlid->value()==0||ui->HSlid3->value()==0||ui->HSlid4->value()==0)
     {
         QMessageBox TrueInputMsgBox;
         TrueInputMsgBox.setWindowTitle("Data entry error");
